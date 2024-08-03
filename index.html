@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Work</title>
+    
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/grid.css" rel="stylesheet">
+<link href="css/bootstrap-grid.css" rel="stylesheet">
+<script src="js/bootstrap.bundle.min.js"></script>
+	
+<!-- CSS -->
+<style>
+	
+	/*
+		div.col, div.col-1, div.col-2, div.col-3, div.col-4, div.col-5, div.col-6, div.col-7, div.col-8, div.col-9,div.col-10,div.col-11,div.col-12, div.col-sm, div.col-sm-1, div.col-sm-2, div.col-sm-3, div.col-sm-4, div.col-sm-5, div.col-sm-6, div.col-sm-7, div.col-sm-8, div.col-sm-9,div.col-sm-10,div.col-sm-11,div.col-sm-12, div.col-md, div.col-md-1, div.col-md-2, div.col-md-3, div.col-md-4, div.col-md-5, div.col-md-6, div.col-md-7, div.col-md-8, div.col-md-9,div.col-md-10,div.col-md-11,div.col-md-12,div.col-lg, div.col-lg-1, div.col-lg-2, div.col-lg-3, div.col-lg-4, div.col-lg-5, div.col-lg-6, div.col-lg-7, div.col-lg-8, div.col-lg-9,div.col-lg-10,div.col-lg-11,div.col-lg-12 {
+			padding-top: .65rem;
+			padding-bottom: .65rem;
+			
+			background-color: lightgrey;
+			border: 1px solid rgba(86,61, 124, .2);
+			
+		}
+	*/
+	
+	html {
+		scroll-behavior:smooth;
+	}	
+	
+	.pHeader {
+		font-size: 20px;
+	}
+	
+	.display-3 {
+		padding-bottom: 20px;
+		padding-top: 15px;
+	}
+	
+	.display-6 {
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+	
+	.jumbotron {
+		padding-top: 50px;
+		padding-bottom: 80px;
+		margin-left: 40px;
+		margin-right: 100px;
+	}
+	
+	.imgRound{
+		display:block;
+		width: 315px;
+		height: 388px;
+		margin-right:auto;
+		margin-left:100px;
+		border-radius:50%;
+		margin-top:10px;
+		object-fit: cover;
+	}
+	
+	.imgCircle{
+		display:block;
+		width: 200px;
+		height: 200px;
+		border-radius:50%;
+	}
+		
+	.spacerDiv {
+		height: 40px;
+	}
+		
+	a:link {
+		text-decoration: none;
+	}
+	
+	a:visited {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	
+	a.nav-link, a.footer {
+		color: black;
+	}
+	
+	a.nav-link:hover, a.footer:hover {
+		color: #e95471;
+		transform: scale(1.05);
+		transition: all .4s ease;
+	}
+	
+	a.contactLink {
+		color: #e95471;
+	}
+	
+	a.contactHover {
+		color: #c22265;
+	}
+	
+	.btn-outline-primary{
+		border-color: #c22265;
+		color: #c22265;
+	}
+		
+	.btn-primary{
+		background-color: #A80046;
+		border-color: #A80046;
+		margin-top: 20px;
+	}
+	
+	.btn:hover {
+		background-color: #c22265;
+		border-color: #c22265;
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	.more:hover {
+		transform: scale(1.05);
+		transition: all .4s ease;
+	}
+	
+	a.activeLink {
+		color: #e95471;
+	}
+	
+	.sideImage {
+		width: 100%;
+		height: 360px;
+		object-fit: cover;
+	}
+	
+	.project {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	
+	.card-img {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+	}
+	
+	.card {
+		margin-top: 10px;
+	}
+	
+	.secondary {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.contact {
+		text-align: center;
+	}
+	
+	.navbar-toggler{
+		float: right;
+	}
+	
+	.mobileNav {
+		padding-top: 20px;
+	}
+	
+	@media (min-width: 768px) and (max-width: 992px) {
+		.imgRound {
+			width: 252px;
+			height: 310px;
+			margin-top: 40px;
+			margin-right: auto;
+			margin-left: 50px;
+		}
+		.jumbotron {
+			margin-right: 40px;
+			padding-top: 10px;
+		}
+		.pHeader {
+			font-size: 1.1rem;
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.jumbotron {
+			padding-top: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 50px;
+			padding-right: 50px;
+			text-align: center;
+		}
+		.nav {
+			padding-top: 10px;
+		}
+		.pHeader {
+			font-size: 1.1rem;
+		}
+		.sideImage {
+			padding-top: 30px;
+		}
+		.largeNav {
+			display: none;
+		}
+		.mobileNav {
+			display: block;
+		}
+	}
+	
+	@media (max-width: 576px) {
+		.card-img {
+			height: 160px;
+		}
+		.center {
+		margin: auto;
+		}
+		.blank {
+			height: 0px;
+		}
+		.footer {
+			margin: auto;
+		}
+		.mobileNav{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+		
+</style>
+    
+</head>
+
+<body>
+	
+	<!-- RESPONSIVE GRID -->
+	<div class="container">
+		
+		<!-- Global nav -->
+		<div class="row mobileNav">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="#">&#127800;&nbsp;AMANDA LIU</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item active px-5">
+						<a class="nav-link activeLink" href="portfolioHome.html">Work</a>
+					</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioMore.html">More</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioAbout.html">About</a>
+      				</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioContact.html">Contact</a>
+      				</li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		
+		<!-- Header -->
+		<div class="row">
+			
+			<div class="col-md-5 col-sm-12">
+			<div class="image">
+				<img src="images/amanda.jpeg" alt="Picture of a girl smiling" class="imgRound" id="largeImg">
+			</div>
+			<div class="image center">
+				<img src="images/amanda2.jpeg" alt="Picture of a girl smiling" class="imgCircle mx-auto" id="smallImg">
+			</div>
+			</div>
+			
+			<div class="col-md-7 col-sm-12">
+			<div class="jumbotron">
+  				<h1 class="display-3">Hi! I'm Amanda.</h1>
+  				<p class = "pHeader">Aspiring UX designer/UX researcher with a passion for creating human-centered digital experiences that are thoughtful, beautiful, and solve user problems.</p>
+				<a href="#work" class="btn btn-primary btn-lg">See my work &darr;</a>
+			</div>
+			</div>
+			
+		</div>
+		
+		<div class="spacerDiv blank">&nbsp;</div>
+		
+		<!-- Main content -->
+		<div class="row" id="work">
+			
+			<div class="row project">
+						<div class="col-md">
+								<h5 class="display-6">Kroger User Research Internship</h5>
+								<p><b>Skills:</b> UX Research, Data Analysis</p>
+								<p><b>Duration: </b> May 2024 - August 2024</p>
+								<p>A mobile app design for making reservations at a cat cafe. This project was created as part of Google's UX Design certificate coursework.</p>
+								<a href="#" class="btn btn-primary btn-lg">Read more</a>
+						</div>
+					
+						<div class="col-md">
+								<img src="images/pinkpaw.jpg" class="sideImage" alt="An image featuring several mockups of a mobile app, such as the home screen, reservations screen, and rules screen.">
+						</div>
+					</div>
+
+					<div class="row project">
+						<div class="col-md">
+								<h5 class="display-6">XP Journey</h5>
+								<p><b>Skills:</b> UI/UX Design, Mobile App Design, UX Research, Figma</p>
+								<p><b>Duration: </b> February 2024 - April 2024</p>
+								<p>A social media and journal entry app design for video games.</p>
+								<a href="#" class="btn btn-primary btn-lg">Read more</a>
+						</div>
+					
+						<div class="col-md">
+								<img src="images/pinkpaw.jpg" class="sideImage" alt="An image featuring several mockups of a mobile app, such as the home screen, reservations screen, and rules screen.">
+						</div>
+					</div>
+
+					<div class="row project">
+						<div class="col-md">
+								<h5 class="display-6">Montezuma Brand Website</h5>
+								<p><b>Skills:</b> UI/UX Design, Web Design, UX Research, Adobe XD</p>
+								<p><b>Duration: </b> May 2023 - August 2023</p>
+								<p>A re-designed website for a local salsa and sauce manufacturer. This was a group project for a user experience design class.</p>
+								<a href="#" class="btn btn-primary btn-lg">Read more</a>
+						</div>
+					
+						<div class="col-md">
+								<img src="images/pinkpaw.jpg" class="sideImage" alt="An image featuring several mockups of a mobile app, such as the home screen, reservations screen, and rules screen.">
+						</div>
+					</div>
+
+					<div class="row project">
+						<div class="col-md">
+								<h5 class="display-6">Pink Paw Mobile App</h5>
+								<p><b>Skills:</b> UI/UX Design, Mobile App Design, UX Research, Illustration, Figma</p>
+								<p><b>Duration: </b> May 2023 - August 2023</p>
+								<p>A mobile app design for making reservations at a cat cafe. This project was created as part of Google's UX Design certificate coursework.</p>
+								<a href="#" class="btn btn-primary btn-lg">Read more</a>
+						</div>
+					
+						<div class="col-md">
+								<img src="images/pinkpaw.jpg" class="sideImage" alt="An image featuring several mockups of a mobile app, such as the home screen, reservations screen, and rules screen.">
+						</div>
+					</div>
+
+				
+					<div class="row project">
+						<div class="col-md">
+						
+								<h5 class="display-6">Design Diary</h5>
+								<p><b>Skills:</b> UX, HCI, Design Thinking, Coding, Game Design, Storytelling, Illustration</p>
+								<p><b>Duration: </b> March 2023 - April 2023</p>
+								<p>A visual novel game created for my HCI + UX course to illustrate design thinking in everyday technology.</p>
+								<a href="#" class="btn btn-primary btn-lg">Read more</a>
+						
+						</div>
+					
+						<div class="col-md">
+							<div class="imgContain">
+								<img src="images/bedroom1.jpg" class="sideImage" alt="An illustration with a smiling mouse-like creature in the front and a bedroom in the back.">
+							</div>
+						</div>
+					</div>
+				</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		<div class="spacerDiv">&nbsp;</div>
+		
+		<!-- Secondary content -->
+		<div class="secondary">
+		<h5> More of my work</h5>
+		<a href="portfolioMore.html">
+		<div class="row more">
+			<div class="col">
+					<div class="card d-block mx-auto">
+						<img src="images/dataviz.jpg" class="card-img" alt="A data visualization in the form of a flower">
+						
+					</div>
+			</div>
+			<div class="col">
+					<div class="card d-block mx-auto">
+						<img src="images/easterstower.png" class="card-img" alt="A digital illustration of a character standing before a foreboding tower.">
+				
+					</div>
+			</div>
+			<div class="col">
+					<div class="card d-block mx-auto">
+						<img src="images/bun.png" class="card-img" alt="Digital illustration of a huge bunny in a twinkling night sky, holding a glowing moon in between its paws.">
+					</div>
+			</div>
+			<div class="col-sm-3" id="item4">
+					<div class="card d-block mx-auto">
+						<img src="images/latenightbreakfast.jpg" class="card-img" alt="Animated promotional image featuring pancakes, donuts, and waffles being eaten to reveal the title of the event.">
+				
+					</div>
+				
+			</div>
+		</div>
+		</a>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		<div class="spacerDiv">&nbsp;</div>
+		<div class="col-sm-12 contact">
+		<a href="portfolioContact.html" class="btn btn-outline-primary btn-lg">Let's get in touch!</a>
+		</div>
+		<div class="spacerDiv">&nbsp;</div>
+		<div class="spacerDiv">&nbsp;</div>
+		
+		<!-- Footer -->
+		<div class="row">
+			<div class="col-sm-6 nav mx-auto center"><a class="navbar-brand center footer" href="#">&#127800;&nbsp;AMANDA LIU</a></div>
+			<div class="col-sm nav"><a href="#" class=" footer">Work</a></div>
+			<div class="col-sm nav"><a href="portfolioMore.html" class="footer">More</a></div>
+			<div class="col-sm nav"><a href="portfolioAbout.html" class="footer">About</a></div>
+			<div class="col-sm nav"><a href="portfolioContact.html" class="footer">Contact</a></div>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		
+	</div>
+	
+	<script>
+		function updateElements() {
+			const largeImage = document.getElementById("largeImg");
+			const smallImage = document.getElementById("smallImg");
+			const item4 = document.getElementById("item4");
+			const isStacked = window.matchMedia('(max-width:768px)').matches;
+			
+			if (isStacked) {
+				largeImage.style.display = "none";
+				smallImage.style.display = "block";
+				item4.style.display="none";
+				
+			} else {
+				largeImage.style.display = "inline";
+				smallImage.style.display = "none";
+				item4.style.display="inline";
+			}
+		}
+		
+		updateElements();
+		
+		window.addEventListener("resize", updateElements);
+		
+	</script>
+    
+</body>
+</html>

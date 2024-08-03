@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+    
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/grid.css" rel="stylesheet">
+<link href="css/bootstrap-grid.css" rel="stylesheet">
+<script src="js/bootstrap.bundle.min.js"></script>
+	
+<!-- CSS -->
+<style>
+	
+	/*
+		div.col, div.col-1, div.col-2, div.col-3, div.col-4, div.col-5, div.col-6, div.col-7, div.col-8, div.col-9,div.col-10,div.col-11,div.col-12, div.col-sm, div.col-sm-1, div.col-sm-2, div.col-sm-3, div.col-sm-4, div.col-sm-5, div.col-sm-6, div.col-sm-7, div.col-sm-8, div.col-sm-9,div.col-sm-10,div.col-sm-11,div.col-sm-12, div.col-md, div.col-md-1, div.col-md-2, div.col-md-3, div.col-md-4, div.col-md-5, div.col-md-6, div.col-md-7, div.col-md-8, div.col-md-9,div.col-md-10,div.col-md-11,div.col-md-12,div.col-lg, div.col-lg-1, div.col-lg-2, div.col-lg-3, div.col-lg-4, div.col-lg-5, div.col-lg-6, div.col-lg-7, div.col-lg-8, div.col-lg-9,div.col-lg-10,div.col-lg-11,div.col-lg-12 {
+			padding-top: .65rem;
+			padding-bottom: .65rem;
+			
+			background-color: lightgrey;
+			border: 1px solid rgba(86,61, 124, .2);
+			
+		}
+	*/
+	
+	html {
+		scroll-behavior:smooth;
+	}	
+	
+	.pHeader {
+		font-size: 20px;
+		margin: 5px;
+	}
+	
+	.display-4 {
+		padding-top: 40px;
+		text-align: center;
+	}
+		
+	.spacerDiv {
+		height: 40px;
+	}
+		
+	a:link {
+		text-decoration: none;
+	}
+	
+	a:visited {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	
+	a.nav-link, a.footer {
+		color: black;
+	}
+	
+	a.activeLink {
+		color: #e95471;
+	}
+	
+	a.nav-link:hover, a.footer:hover, a.contactLink:hover {
+		color: #e95471;
+		transform: scale(1.05);
+		transition: all .4s ease;
+	}
+	
+	a.contactLink {
+		color: #e95471;
+	}
+	
+	.card{
+		margin-top: 25px;
+	}
+		
+	.btn-primary{
+		background-color: #A80046;
+		border-color: #A80046;
+		margin-top: 20px;
+	}
+	
+	.btn:hover {
+		background-color: #c22265;
+		border-color: #c22265;
+	}
+	
+	.selected {
+		color: #e95471;
+	}
+	
+	.secondary {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.btn-outline-primary{
+		border-color: #c22265;
+		color: #c22265;
+	}
+	
+	.btn:hover {
+		background-color: #c22265;
+		border-color: #c22265;
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	.card:hover {
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	.contact {
+		text-align: center;
+	}
+	
+	.mobileNav {
+		padding-top: 20px;
+	}
+	
+	.contactInfo {
+		text-align: center;
+		padding: 30px;
+		margin: 40px;
+  		border-top: 1.5px solid #c22265;
+		border-bottom: 1.5px solid #c22265;
+	}
+	
+	@media (max-width: 767px) {
+		.nav {
+			padding-top: 10px;
+		}
+		.pHeader {
+			font-size: 1.1rem;
+		}
+		.nav-link {
+			margin: auto;
+		}
+		.contactInfo {
+			margin: auto;
+			width: 80%;
+			margin-top: 100px;
+			margin-bottom: 60px;
+		}
+	}
+	
+	@media (max-width: 576px) {
+		.center{
+			margin: auto;
+		}
+		.footer {
+			margin: auto;
+		}
+		.container {
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+	}
+
+		
+</style>
+    
+</head>
+
+<body>
+	
+	<!-- RESPONSIVE GRID -->
+	<div class="container">
+		
+		<!-- Global nav -->
+		<div class="row mobileNav">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html">&#127800;&nbsp;AMANDA LIU</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item px-5">
+						<a class="nav-link" href="index.html">Work</a>
+					</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioMore.html" >More</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioAbout.html">About</a>
+      				</li>
+					<li class="nav-item active">
+        				<a class="nav-link px-5 activeLink" href="#">Contact</a>
+      				</li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+		
+		<!-- Main content -->
+		<h1 class="display-4">Let's connect!</h1>
+		
+		<div class="row">
+		<div class="col-lg col-md col-sm"></div>
+		<div class="col-lg-6 col-md-8 col-sm contactInfo">
+			<p class="pHeader">Email me at <i><a href="mailto: amandaliu66@gmail.com"  target="_blank" rel="noreferrer noopener" class="contactLink">amandaliu66@gmail.com</a></i></p>
+			<p class="pHeader">Connect with me on <i><a href="https://www.linkedin.com/in/amanda-liu-3bb238188/"  target="_blank" rel="noreferrer noopener" class="contactLink"> LinkedIn</a></i></p>
+		</div>
+		<div class="col-lg col-md col-sm"></div>
+		</div>
+
+		<div class="spacerDiv">&nbsp;</div>
+		<div class="spacerDiv">&nbsp;</div>
+		
+		<!-- Footer -->
+		<div class="row">
+			<div class="col-sm-6 nav mx-auto center"><a class="navbar-brand center footer" href="index.html">&#127800;&nbsp;AMANDA LIU</a></div>
+			<div class="col-sm nav"><a href="index.html" class="footer">Work</a></div>
+			<div class="col-sm nav"><a href="portfolioMore.html" class="footer">More</a></div>
+			<div class="col-sm nav"><a href="portfolioAbout.html" class="footer">About</a></div>
+			<div class="col-sm nav"><a href="#" class="footer">Contact</a></div>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		
+	</div>
+    
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+    
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/grid.css" rel="stylesheet">
+<link href="css/bootstrap-grid.css" rel="stylesheet">
+<script src="js/bootstrap.bundle.min.js"></script>
+	
+<!-- CSS -->
+<style>
+	
+	/*
+		div.col, div.col-1, div.col-2, div.col-3, div.col-4, div.col-5, div.col-6, div.col-7, div.col-8, div.col-9,div.col-10,div.col-11,div.col-12, div.col-sm, div.col-sm-1, div.col-sm-2, div.col-sm-3, div.col-sm-4, div.col-sm-5, div.col-sm-6, div.col-sm-7, div.col-sm-8, div.col-sm-9,div.col-sm-10,div.col-sm-11,div.col-sm-12, div.col-md, div.col-md-1, div.col-md-2, div.col-md-3, div.col-md-4, div.col-md-5, div.col-md-6, div.col-md-7, div.col-md-8, div.col-md-9,div.col-md-10,div.col-md-11,div.col-md-12,div.col-lg, div.col-lg-1, div.col-lg-2, div.col-lg-3, div.col-lg-4, div.col-lg-5, div.col-lg-6, div.col-lg-7, div.col-lg-8, div.col-lg-9,div.col-lg-10,div.col-lg-11,div.col-lg-12 {
+			padding-top: .65rem;
+			padding-bottom: .65rem;
+			
+			background-color: lightgrey;
+			border: 1px solid rgba(86,61, 124, .2);
+			
+		}
+	*/
+	
+	
+	html {
+		scroll-behavior:smooth;
+	}	
+	
+	.pHeader {
+		font-size: 17px;
+	}
+	
+	.display-4 {
+		padding-bottom: 20px;
+	}
+	
+	.display-6 {
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+	
+	.jumbotron {
+		padding-bottom: 80px;
+		margin-left: 60px;
+		margin-right: 20px;
+	}
+	
+	.imgRound{
+		display:block;
+		width: 315px;
+		height: 388px;
+		margin-right:auto;
+		margin-left:100px;
+		border-radius:7%;
+		margin-top:30px;
+		object-fit: cover;
+	}
+	
+	.imgCircle{
+		display:block;
+		width: 200px;
+		height: 200px;
+		border-radius:50%;
+	}
+		
+	.spacerDiv {
+		height: 40px;
+	}
+		
+	a:link {
+		text-decoration: none;
+	}
+	
+	a:visited {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	
+	a.nav-link, a.footer {
+		color: black;
+	}
+	
+	a.nav-link:hover, a.footer:hover {
+		color: #e95471;
+		transform: scale(1.05);
+		transition: all .4s ease;
+	}
+	
+	a.contactLink {
+		color: #e95471;
+	}
+	
+	a.contactHover {
+		color: #c22265;
+	}
+	
+	.btn-outline-primary{
+		border-color: #c22265;
+		color: #c22265;
+		margin-top: 10px;
+	}
+		
+	.btn-primary{
+		background-color: #A80046;
+		border-color: #A80046;
+		margin-top: 20px;
+	}
+	
+	.btn:hover {
+		background-color: #c22265;
+		border-color: #c22265;
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	.more:hover {
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	a.activeLink {
+		color: #e95471;
+	}
+	
+	.contact {
+		text-align: center;
+	}
+	
+	.navbar-toggler{
+		float: right;
+	}
+	
+	.mobileNav {
+		padding-top: 20px;
+	}
+	
+	.cat {
+		object-fit: cover;
+		width: 100%;
+		height: auto;
+		margin-top: 90px;
+	}
+	
+	.resume {
+		margin-left: 10px;
+	}
+	
+	@media (min-width: 768px) and (max-width: 992px) {
+		.jumbotron {
+			margin-right: 40px;
+			padding-top: 10px;
+			padding-bottom: 0px;
+		}
+		.pHeader {
+			font-size: 1.1rem;
+		}
+		.cat{
+			width: 50%;
+			height: auto;
+			margin-top: 20px;
+		}
+		.catContain{
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.jumbotron {
+			padding-top: 10px;
+			padding-bottom: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		.nav {
+			padding-top: 10px;
+		}
+		.pHeader {
+			font-size: 1.1rem;
+		}
+		.largeNav {
+			display: none;
+		}
+		.mobileNav {
+			display: block;
+		}
+		.cat{
+			width: 70%;
+			height: auto;
+			margin-top: 0px;
+		}
+		.catContain{
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+	
+	@media (max-width: 576px) {
+		.center {
+		margin: auto;
+		}
+		.blank {
+			height: 0px;
+		}
+		.footer {
+			margin: auto;
+		}
+		.mobileNav{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+		
+</style>
+    
+</head>
+
+<body>
+	
+	<!-- RESPONSIVE GRID -->
+	<div class="container">
+		
+		<!-- Global nav -->
+		<div class="row mobileNav">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html">&#127800;&nbsp;AMANDA LIU</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item active px-5">
+						<a class="nav-link" href="index.html">Work</a>
+					</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioMore.html">More</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link px-5 activeLink" href="#">About</a>
+      				</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioContact.html">Contact</a>
+      				</li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		
+		<!-- Header -->
+		<div class="row">
+			
+			<div class="row">
+				<div class="col-lg-8 col-sm-12">
+					<div class="jumbotron">
+						<h1 class="display-4">About me</h1>
+						<p class = "pHeader">I'm Amanda Liu — aspiring UX designer/UX researcher and third-year student double majoring in Marketing and Data Analytics at the Ohio State University.</p>
+						<p class = "pHeader">As someone who's always enjoyed engaging both the logical and the creative sides of my brain, I love expanding my skillset and have experience in multiple fields including research, art, statistics, coding, business, and design. Through my unique background, I've gained perspective on the importance of considering all sides to create solutions that make a difference in people's lives.</p>
+						<p class ="pHeader">In my free time, you can find me doodling, attempting to bake, and jamming out on the piano or guitar!</p>
+						<a href="portfolioContact.html" class="btn btn-outline-primary btn-lg">Let's get in touch!</a>
+						<a href="images/resume.pdf" class="btn btn-outline-primary btn-lg resume" target="_blank" rel="noreferrer noopener">Resume</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-12">
+					<div class="catContain">
+						<img src="images/cat.png" alt="..." class="cat">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		
+		<!-- Footer -->
+		<div class="row">
+			<div class="col-sm-6 nav mx-auto center"><a class="navbar-brand center footer" href="#">&#127800;&nbsp;AMANDA LIU</a></div>
+			<div class="col-sm nav"><a href="index.html" class=" footer">Work</a></div>
+			<div class="col-sm nav"><a href="portfolioMore.html" class="footer">More</a></div>
+			<div class="col-sm nav"><a href="#" class="footer">About</a></div>
+			<div class="col-sm nav"><a href="portfolioContact.html" class="footer">Contact</a></div>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		
+	</div>
+    
+</body>
+</html>

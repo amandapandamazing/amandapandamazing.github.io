@@ -1,0 +1,604 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>More</title>
+    
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/grid.css" rel="stylesheet">
+<link href="css/bootstrap-grid.css" rel="stylesheet">
+<script src="js/bootstrap.bundle.min.js"></script>
+	
+<!-- CSS -->
+<style>
+	
+	/*
+		div.col, div.col-1, div.col-2, div.col-3, div.col-4, div.col-5, div.col-6, div.col-7, div.col-8, div.col-9,div.col-10,div.col-11,div.col-12, div.col-sm, div.col-sm-1, div.col-sm-2, div.col-sm-3, div.col-sm-4, div.col-sm-5, div.col-sm-6, div.col-sm-7, div.col-sm-8, div.col-sm-9,div.col-sm-10,div.col-sm-11,div.col-sm-12, div.col-md, div.col-md-1, div.col-md-2, div.col-md-3, div.col-md-4, div.col-md-5, div.col-md-6, div.col-md-7, div.col-md-8, div.col-md-9,div.col-md-10,div.col-md-11,div.col-md-12,div.col-lg, div.col-lg-1, div.col-lg-2, div.col-lg-3, div.col-lg-4, div.col-lg-5, div.col-lg-6, div.col-lg-7, div.col-lg-8, div.col-lg-9,div.col-lg-10,div.col-lg-11,div.col-lg-12 {
+			padding-top: .65rem;
+			padding-bottom: .65rem;
+			
+			background-color: lightgrey;
+			border: 1px solid rgba(86,61, 124, .2);
+			
+		}
+	*/
+	
+	html {
+		scroll-behavior:smooth;
+	}	
+	
+	.pHeader {
+		font-size: 20px;
+	}
+	
+	.display-4 {
+		padding-bottom: 20px;
+		padding-top: 40px;
+		text-align: center;
+	}
+	
+	.contact {
+		text-align: center;
+	}
+		
+	.spacerDiv {
+		height: 40px;
+	}
+		
+	a:link {
+		text-decoration: none;
+	}
+	
+	a:visited {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	
+	a.nav-link, a.footer {
+		color: black;
+	}
+	
+	a.activeLink {
+		color: #e95471;
+	}
+	
+	a.nav-link:hover, a.footer:hover {
+		color: #e95471;
+		transform: scale(1.05);
+		transition: all .4s ease;
+	}
+	
+	a.contactLink {
+		color: #e95471;
+	}
+	
+	a.contactHover {
+		color: #c22265;
+	}
+	
+	.card{
+		margin-top: 25px;
+	}
+		
+	.btn-primary{
+		background-color: #A80046;
+		border-color: #A80046;
+		margin-top: 20px;
+	}
+	
+	.btn:hover {
+		background-color: #c22265;
+		border-color: #c22265;
+	}
+	
+	.selected {
+		color: #e95471;
+	}
+	
+	.sideImage {
+		padding-top: 30px;
+		width: 100%;
+		height: 360px;
+		object-fit: cover;
+	}
+	
+	.modal {
+		background-color: transparent;
+	}
+
+	
+	.project {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	
+	.card-img {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+	}
+	
+	.secondary {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.btn-outline-primary{
+		border-color: #c22265;
+		color: #c22265;
+	}
+	
+	.btn:hover {
+		background-color: #c22265;
+		border-color: #c22265;
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	.card:hover {
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	.contact {
+		text-align: center;
+	}
+	
+	.mobileNav {
+		padding-top: 20px;
+	}
+	
+	.modalImg {
+		object-fit: cover;
+		max-height: 400px;
+		max-width: 450px;
+	}
+	
+	.carousel-inner {
+		height: 400px;
+		display: flex;
+		align-items: center;
+	}
+	
+	.modalText {
+		padding: 5px;
+		padding-top: 20px;
+	}
+	
+	@media (max-width: 767px) {
+		.nav {
+			padding-top: 10px;
+		}
+		.nav-link {
+			margin: auto;
+		}
+	}
+	
+	@media (max-width: 576px) {
+		.item {
+			width: 50%;
+		}
+		.center{
+			margin: auto;
+		}
+		.footer {
+			margin: auto;
+		}
+		.container {
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+	}
+
+		
+</style>
+    
+</head>
+
+<body>
+	
+	<!-- RESPONSIVE GRID -->
+	<div class="container">
+		
+		<!-- Global nav -->
+		<div class="row mobileNav">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand myLink" href="index.html">&#127800;&nbsp;AMANDA LIU</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item px-5">
+						<a class="nav-link myLink" href="index.html">Work</a>
+					</li>
+					<li class="nav-item active">
+        				<a class="nav-link myLink activeLink px-5" href="portfolioMore.html" >More</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link myLink px-5" href="portfolioAbout.html">About</a>
+      				</li>
+					<li class="nav-item">
+        				<a class="nav-link myLink px-5" href="portfolioContact.html">Contact</a>
+      				</li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+		
+		<!-- Main content -->
+		<h1 class="display-4">More of my work</h1>
+
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6 item">
+				<div class="card d-block mx-auto">
+						<img src="images/dataviz.jpg" class="card-img" alt="A data visualization in the form of a flower" data-bs-toggle="modal" data-bs-target="#modal1">
+						
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 item">
+				<div class="card d-block mx-auto">
+						<img src="images/easterstower.png" class="card-img" alt="A digital illustration of a character standing before a foreboding tower." data-bs-toggle="modal" data-bs-target="#modal2">
+				
+				</div>	
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 item">
+				<div class="card d-block mx-auto">
+					<img src="images/bun.png" class="card-img" alt="Digital illustration of a huge bunny in a twinkling night sky, holding a glowing moon in between its paws." data-bs-toggle="modal" data-bs-target="#modal3">
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 item">
+				<div class="card d-block mx-auto">
+						<img src="images/project2eclipse.jpg" class="card-img" alt="" data-bs-toggle="modal" data-bs-target="#modal7">
+						</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 item">
+				<div class="card d-block mx-auto">
+					<img src="images/molemaidensteambanner.jpg" class="card-img" alt="" data-bs-toggle="modal" data-bs-target="#modal6">
+					</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 item">
+				<div class="card d-block mx-auto">
+						<img src="images/AClogo.jpg" class="card-img" alt="" data-bs-toggle="modal" data-bs-target="#modal5">
+				</div>	
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 item">
+				<div class="card d-block mx-auto">
+						<img src="images/nutcaseThumbnail.png" class="card-img" alt="" data-bs-toggle="modal" data-bs-target="#modal8">
+						</div>
+				</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 item" id="item4">
+				<div class="card d-block mx-auto">
+						<img src="images/latenightbreakfast.jpg" class="card-img" alt="Animated promotional image featuring pancakes, donuts, and waffles being eaten to reveal the title of the event." data-bs-toggle="modal" data-bs-target="#modal4">
+				
+				</div>	
+			</div>
+		</div>
+
+		
+		<!-- Modals -->
+		<!-- Modal 1 -->
+		<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+		<div class="modal-body">
+			<div class="d-flex justify-content-center">
+				<img src="images/dataviz.jpg" class="img modalImg" alt="A data visualization in the form of a flower">
+			</div>
+			<div class="modalText">
+				<h6 class="display-6">Gratitude in Bloom</h6>
+				<p><i>Data visualization, information design, graphic design</i></p>
+				<p>Project for DESIGN 5505: Information Design, visualizing the contents of a week-long gratitude journal. Created using Adobe Illustrator.</p>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+		
+		<!-- Modal 2 -->
+		<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal5title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+		<div class="modal-body">
+				<div class="col-sm">
+				<div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="d-flex justify-content-center">
+					  		<img src="images/easterstower.png" class="img modalImg" alt="...">
+						</div>
+					</div>
+					<div class="carousel-item">
+					  	<div class="d-flex justify-content-center">
+					  		<img src="images/easterstowersketch.png" class="img modalImg" alt="...">
+						</div>
+					</div>
+					<div class="carousel-item">
+					  	<div class="d-flex justify-content-center">
+					  		<img src="images/logosketch.png" class="img modalImg" alt="...">
+						</div>
+					</div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+			</div>
+			
+		<div class="col-sm">
+			<div class="modalText">
+				<h6 class="display-6">Easter's Tower</h6>
+				<p><i>Illustration, graphic design</i></p>
+				<p>Freelance project for a video game demo by Joseph Supino, including a cover design and logo design. Created using Clip Studio Paint.</p>
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+		<!-- Modal 3 -->
+		<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+		<div class="modal-body">
+			<div class="d-flex justify-content-center">
+				<img src="images/bun.png" class="img modalImg" alt="Digital illustration of a huge bunny in a twinkling night sky, holding a glowing moon in between its paws.">
+			</div>
+			<div class="modalText">
+				<h6 class="display-6">Year of the Rabbit</h6>
+				<p><i>Illustration</i></p>
+				<p>An digital painting celebrating the new year! Created using Clip Studio Paint.</p>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+		
+		<!-- Modal 4 -->
+		<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+		<div class="modal-body">
+			<div class="d-flex justify-content-center">
+				<img src="images/latenightbreakfast.gif" class="img modalImg" alt="Animated promotional image featuring pancakes, donuts, and waffles being eaten to reveal the title of the event.">
+			</div>
+			<div class="modalText">
+				<h6 class="display-6">Late Night Breakfast</h6>
+				<p><i>Marketing, Animation, Illustration, Graphic Design</i></p>
+				<p>Art for the OSU Residence Halls Advisory Council's social media promoting their Late Night Breakfast event. Created using Procreate.</p>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+		
+		<!-- Modal 5 -->
+		<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+		<div class="modal-body">
+				<div class="col-sm">
+				<div id="carousel5" class="carousel carousel-dark slide" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+					<div class="carousel-item">
+						<div class="d-flex justify-content-center">
+					  		<img src="images/AClogo.png" class="img modalImg" alt="...">
+						</div>
+					</div>
+					  <div class="carousel-item">
+						<div class="d-flex justify-content-center">
+					  		<img src="images/bluegradientlogo.png" class="img modalImg" alt="...">
+						</div>
+					</div>
+					  <div class="carousel-item">
+						<div class="d-flex justify-content-center">
+					  		<img src="images/blacklogo.png" class="img modalImg" alt="...">
+						</div>
+					</div>
+					<div class="carousel-item active">
+					  	<div class="d-flex justify-content-center">
+					  		<img src="images/animationClubFlyer.png" class="img modalImg" alt="...">
+						</div>
+					</div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="modalText">
+					<h6 class="display-6">Animation Club</h6>
+					<p><i>Marketing, Illustration, Graphic Design</i></p>
+					<p>Promotional materials created for the OSU Animation Club as the Marketing Officer, including a logo and flyer design. Created using Adobe Illustrator and Procreate.</p>
+				</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+		
+		<!-- Modal 6 -->
+		<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+		<div class="modal-body">
+				<div class="col-sm">
+					  	<div class="d-flex justify-content-center">
+					  		<img src="images/mmcover.jpg" class="img modalImg" alt="...">
+						</div>
+					</div>
+			<div class="col-sm">
+				<div class="modalText">
+					<h6 class="display-6">Mole Maiden</h6>
+					<p><i>Marketing, Illustration</i></p>
+					<p>Promotional materials created for the indie game Mole Maiden developed by Tastie Games, including character assets used in the game's <a href="https://store.steampowered.com/app/2000780/Mole_Maiden/" target="_blank" rel="noreferrer noopener">Steam page</a> and <a href="https://www.youtube.com/watch?v=_dnjZw2H-uc" target="_blank" rel="noreferrer noopener">trailer</a>. Created using Clip Studio Paint.</p>
+				</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+		
+		<!-- Modal 7 -->
+		<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modal7title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+		<div class="modal-body">
+			<img src="images/project2eclipse.png" class="img modalImg" alt="">
+		<div class="modalText">
+				<h6 class="display-6">Solar Eclipse Project</h6>
+				<p><i>Information design, graphic design, illustration</i></p>
+				<p>Partner project for DESIGN 5505: Information Design, illustrating different natural responses to a total solar eclipse; I worked on the visual style and drawing aspects of the project. Created using Adobe Illustrator and Procreate.</p>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+			
+		<!-- Modal 8 -->
+		<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modal7title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+		<div class="modal-body">
+				<div class="col-sm">
+				<div id="carousel8" class="carousel carousel-dark slide" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="d-flex justify-content-center">
+					  		<video width="100%" height="auto" controls> <source src="images/animaticscene2.mp4" type="video/mp4"></video>
+						</div>
+					</div>
+					<div class="carousel-item">
+					  	<div class="d-flex justify-content-center">
+					  		<img src="images/nutcaseTurnaround.png" class="img modalImg" alt="...">
+						</div>
+					</div>
+					 <div class="carousel-item">
+					  	<div class="d-flex justify-content-center">
+					  		<img src="images/nutcaseTurnaround.gif" class="img modalImg" alt="...">
+						</div>
+					</div>
+					<div class="carousel-item">
+					  	<div class="d-flex justify-content-center">
+					  		<img src="images/nutcaseThumbnail2.png" class="img modalImg" alt="...">
+						</div>
+					</div>
+					 <div class="carousel-item">
+					  	<div class="d-flex justify-content-center">
+					  		<img src="images/nutcaseDarla.jpg" class="img modalImg" alt="...">
+						</div>
+					</div>
+					<div class="carousel-item">
+					  	<div class="d-flex justify-content-center">
+					  		<img src="images/nutcaseMax.png" class="img modalImg" alt="...">
+						</div>
+					</div>
+					<div class="carousel-item">
+					  	<div class="d-flex justify-content-center">
+					  		<img src="images/nutcaseLily.png" class="img modalImg" alt="...">
+						</div>
+					</div>
+					<div class="carousel-item">
+					  	<div class="d-flex justify-content-center">
+					  		<img src="images/nutcaseWinston.png" class="img modalImg" alt="...">
+						</div>
+					</div>  
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carousel8" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carousel8" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+			</div>
+		<div class="col-sm">
+		<div class="modalText">
+				<h6 class="display-6">The Nut Case</h6>
+				<p><i>Animation, storyboarding, character design</i></p>
+				<p>I created character designs and storyboards for the OSU Animation Club's 2023 spring production which can be viewed <a href="https://www.youtube.com/watch?v=kFhLs-xJais" target="_blank" rel="noreferrer noopener">here</a>. Created using Procreate.</p>
+			</div>
+		</div>
+		</div>
+    </div>
+  </div>
+</div>
+		
+		
+		<div class="spacerDiv">&nbsp;</div>
+		<div class="spacerDiv">&nbsp;</div>
+		<div class="col-sm-12 contact">
+		<a href="portfolioContact.html" class="btn btn-outline-primary btn-lg">Let's get in touch!</a>
+		</div>
+		<div class="spacerDiv">&nbsp;</div>
+		<div class="spacerDiv">&nbsp;</div>
+		
+		<!-- Footer -->
+		<div class="row">
+			<div class="col-sm-6 nav mx-auto center"><a class="navbar-brand center footer" href="index.html">&#127800;&nbsp;AMANDA LIU</a></div>
+			<div class="col-sm nav"><a href="index.html" class=" footer">Work</a></div>
+			<div class="col-sm nav"><a href="#" class="footer">More</a></div>
+			<div class="col-sm nav"><a href="portfolioAbout.html" class="footer">About</a></div>
+			<div class="col-sm nav"><a href="portfolioContact.html" class="footer">Contact</a></div>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		
+	</div>
+    
+</body>
+</html>
