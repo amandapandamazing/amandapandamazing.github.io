@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+    
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/grid.css" rel="stylesheet">
+<link href="css/bootstrap-grid.css" rel="stylesheet">
+<script src="js/bootstrap.bundle.min.js"></script>
+	
+<!-- CSS -->
+<style>
+	
+	/*
+		div.col, div.col-1, div.col-2, div.col-3, div.col-4, div.col-5, div.col-6, div.col-7, div.col-8, div.col-9,div.col-10,div.col-11,div.col-12, div.col-sm, div.col-sm-1, div.col-sm-2, div.col-sm-3, div.col-sm-4, div.col-sm-5, div.col-sm-6, div.col-sm-7, div.col-sm-8, div.col-sm-9,div.col-sm-10,div.col-sm-11,div.col-sm-12, div.col-md, div.col-md-1, div.col-md-2, div.col-md-3, div.col-md-4, div.col-md-5, div.col-md-6, div.col-md-7, div.col-md-8, div.col-md-9,div.col-md-10,div.col-md-11,div.col-md-12,div.col-lg, div.col-lg-1, div.col-lg-2, div.col-lg-3, div.col-lg-4, div.col-lg-5, div.col-lg-6, div.col-lg-7, div.col-lg-8, div.col-lg-9,div.col-lg-10,div.col-lg-11,div.col-lg-12 {
+			padding-top: .65rem;
+			padding-bottom: .65rem;
+			
+			background-color: lightgrey;
+			border: 1px solid rgba(86,61, 124, .2);
+			
+		}
+	*/
+	
+	
+	html {
+		scroll-behavior:smooth;
+	}	
+
+	.mainImage{
+		width: 100%;
+	}
+	
+	.pageBody {
+		padding-bottom: 50px;
+		margin-left: 150px;
+		margin-right: 150px;
+	}
+
+	.textCenter {
+		padding: 50px 0;
+	}
+
+	.image1 {
+		width:100%;
+		display: block;
+		margin: auto;
+	}
+
+	.image2{
+		width: 100%;
+	}
+
+	.image3{
+		display: block;
+		margin-right: auto;
+		width:90%;
+	}
+	
+	.row1{
+			display:flex;
+			flex-direction: row;
+		}
+
+	p {
+		font-size: 17px;
+	}
+	
+	.display-4 {
+		padding-bottom: 20px;
+	}
+	
+	.display-6 {
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+		
+	.spacerDiv {
+		height: 40px;
+	}
+		
+	a:link {
+		text-decoration: none;
+	}
+	
+	a:visited {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	
+	a.nav-link, a.footer {
+		color: black;
+	}
+	
+	a.nav-link:hover, a.footer:hover {
+		color: #e95471;
+		transform: scale(1.05);
+		transition: all .4s ease;
+	}
+	
+	a.contactLink {
+		color: #e95471;
+	}
+	
+	a.contactHover {
+		color: #c22265;
+	}
+	
+	.btn-outline-primary{
+		border-color: #c22265;
+		color: #c22265;
+		margin-top: 10px;
+	}
+		
+	.btn-primary{
+		background-color: #A80046;
+		border-color: #A80046;
+		margin-top: 20px;
+	}
+	
+	.btn:hover {
+		background-color: #c22265;
+		border-color: #c22265;
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	.more:hover {
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	a.activeLink {
+		color: #e95471;
+	}
+	
+	.contact {
+		text-align: center;
+	}
+	
+	.navbar-toggler{
+		float: right;
+	}
+	
+	.mobileNav {
+		padding-top: 20px;
+	}
+	
+	.resume {
+		margin-left: 10px;
+	}
+	
+	@media (min-width: 768px) and (max-width: 992px) {
+		p {
+			font-size: 1.1rem;
+		}
+		.pageBody {
+			padding-bottom: 40px;
+			margin-left: 30px;
+			margin-right:30px;
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.nav {
+			padding-top: 10px;
+		}
+		p {
+			font-size: 1.1rem;
+		}
+		.largeNav {
+			display: none;
+		}
+		.mobileNav {
+			display: block;
+		}
+		.pageBody {
+			padding-bottom: 30px;
+			margin-left: 10px;
+			margin-right:10px;
+		}
+		.image1{
+			height:300px;
+			width:600px;
+			margin-left:-90px;
+		}
+		.image2{
+			height:300px;
+			width:600px;
+			margin-left:-90px;
+		}
+		.image3{
+			width: 70%;
+			height: auto;
+		}
+		.textCenter{
+			padding: 0px;
+		}
+		.row1{
+			display:flex;
+			flex-direction: column-reverse;
+		}
+	}
+	
+	@media (max-width: 576px) {
+		.center {
+		margin: auto;
+		}
+		.blank {
+			height: 0px;
+		}
+		.footer {
+			margin: auto;
+		}
+		.mobileNav{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+		
+</style>
+    
+</head>
+
+<body>
+	
+	<!-- RESPONSIVE GRID -->
+	<div class="container">
+		
+		<!-- Global nav -->
+		<div class="row mobileNav">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html">&#127800;&nbsp;AMANDA LIU</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item active px-5">
+						<a class="nav-link" href="index.html">Work</a>
+					</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioMore.html">More</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioAbout.html">About</a>
+      				</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioContact.html">Contact</a>
+      				</li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+
+		<!-- Header -->
+		<div class="row pageBody">
+			<div class="col"><img src="images/kroger1.png" alt="Hero image with the Kroger logo and User Research Internship" class="mainImage"></div>
+		</div>
+
+		<!-- Body -->
+		 <div class="row pageBody">
+			<h5>BACKGROUND</h5>
+			<p class = "pHeader">Kroger serves over 11 million customers daily with many opting to use their grocery pickup service. As a user research intern at Kroger
+				 Technology & Digital (KTD), I was tasked with improving the quarterly survey that goes out to Pickup associates who work behind the scenes to fulfill
+				  online orders. Over the course of the summer, I collaborated with researchers, product designers, and stakeholders to gain better insights into the 
+				  experiences of Pickup associates. 
+			</p>
+			<p>There were two main questions we seeked to answer through the survey:</p>
+			<div class="row">
+				<div class="col"><img src="images/kroger2.png" alt="Question 1: What are the current sentiments of associates within the Pickup department?
+					Question 2: How can we deliver products that drive a better experience for Pickup associates?" class="image1"></div>
+			</div>
+
+			<div class="spacerDiv">&nbsp;</div>
+
+			<h5>TIMELINE</h5>
+			<div class="row">
+				<div class="col"><img src="images/kroger3.png" alt="
+					A timeline containing 4 months and the parts of the project that occurred during each.
+					May: Review results of the first quarter of the survey;
+					June: R analysis of previous quarter's results, focus group with product designers to improve the error question,
+					in-store visit to observe Pickup department, the revised survey goes out for the second quarter;
+					July: review, summarize, and present out results of the second quarter of the survey, create research plan 
+					and interview guide, begin visiting stores and conducting interviews to understand survey participation;
+					August: Continue visiting stores and conducting interviews to understand survey participation" class="image2"></div>
+			</div>
+
+			<div class="spacerDiv">&nbsp;</div>
+
+			<h5>METHODOLOGY</h5>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="images/kroger4.png" alt="Statistical Analysis" class="image3">
+				</div>
+				<div class="col textCenter"><p>At the time of my internship, the previous quarter had recently concluded, so part of my project was to analyze these results to inform the future of the survey. Drawing upon my data analytics background, I chose to build regression models in R to <b>explore the relationships between different quantitative factors</b>, such as role, generation, time at the company, and various measures of sentiment (in regards to technology, labor, and the Pickup department in general). I created several models to investigate different relationships and dig into the main drivers for associates’ sentiment.
+				</p></div>
+			</div>
+			<div class="row1">
+				<div class="col textCenter">
+					<p>One survey question I specifically focused on was related to errors that associates experience while using technology within the Pickup space; <b>the goal was to produce actionable and useful feedback for product designers</b>. To better understand what they needed from this question, we decided to conduct a focus group with the product designers who would be acting upon the survey results. Some questions we asked included how they define an error, what feedback would be helpful (or unhelpful) to receive, and which format they would prefer for the question–depending on their priorities, this could be aimed towards discovering new errors or quantifying the frequency of known errors. I moderated the discussion and used a Mural board to organize everyone’s thoughts.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="images/kroger5.png" alt="Focus Group" class="image3">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="images/kroger6.png" alt="Interviews and In-store Visits" class="image3">
+				</div>
+				<div class="col textCenter"><p><b>The deepest insights came from going in-store to observe and talk to those who would be most impacted by the results of the survey–the Pickup associates themselves.</b> The purpose of these visits was two-fold: 1) to observe the way Pickup associates work and how they use technology, and 2) to understand current awareness of the survey. We noticed that participation in the survey had gone down considerably between quarters and wanted to figure out what could be driving this–were people aware of the survey, but choosing not to take it due to time constraints? Were people completely unaware of the survey, or overwhelmed by the number of surveys they had received over the past weeks? I wrote a research plan and interview guide to address these questions, and we visited multiple locations–some smaller and some larger, some with newer technology and some with more outdated technology. Since these were interviews with associates, we could not provide incentives to participants, but everyone we talked to was eager to share their experiences with us. 
+				</p></div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm">
+					<h5>INTERVIEW RESEARCH QUESTIONS</h5>
+					<ul>
+						<li>What drove associates’ decisions to take/not take the pickup survey in both quarters?</li>
+						<li>How aware are associates of the survey?</li>
+						<li>What is the current perception of the survey?</li>
+						<li>What might help improve participation rates for future quarters?</li>
+						<li>What do associates expect KTD to do with their feedback?</li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<h5>SAMPLE INTERVIEW QUESTIONS</h5>
+					<ul>
+						<li>What are your thoughts on the amount of surveys that have been presented to you by Kroger over the past few months?</li>
+						<li>What are some ways that you have shared feedback about your pickup experiences within the past 6 months?</li>
+						<li>How would you describe your past experiences with the quarterly pickup survey?</li>
+						<li>How confident are you that action will be taken based on this survey?</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="spacerDiv">&nbsp;</div>
+
+			<h5>ANALYSIS AND SYNTHESIS</h5>
+			<p>Given the large amounts of data–both quantitative and qualitative–resulting from the survey in both quarters, it was important that we organized it to draw meaningful insights. This was a collaborative process and often involved sharing our thoughts and observations using Mural. For example, in addition to analyzing the quantitative results of the previous quarter in R, I created a board mapping out the types of errors that were encountered for different applications and the reasons why they occurred; from here, we were able to identify common errors to discuss with the product designers. After conducting in-store interviews, we debriefed and sorted observations into overarching themes using sticky notes and an affinity map. This greatly helped us to develop and summarize our insights when it came time to present our findings.
+			</p>
+
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="spacerDiv">&nbsp;</div>
+
+			<h5>RESULTS</h5>
+			<div class="row">
+				<div class="col"><img src="images/kroger7.png" alt="Results" class="image1"></div>
+			</div>
+			<div class="spacerDiv">&nbsp;</div>
+			
+			<p>Ultimately, each of the different methods of research provided useful findings to inform the future of the Pickup survey. After uncovering interesting insights into some key drivers of sentiment within the Pickup department, I documented the <b>statistical analysis</b> in a report and summarized these to present to stakeholders. These quantitative results added credibility to our findings, provided a view into the current sentiment within the department, and allowed the research team to better advocate for Pickup associates.</p>
+			<p>Conducting the <b>focus group</b> was key to revising the error question of the survey. Before this, there was a wide range of answers to this question; many participants did not understand what the purpose of the question was or gave vague answers that were not actionable. After hearing from product designers, we gained perspective into what feedback would actually be useful for product designers to receive:</p>
+			
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="col">
+				<ul>
+					<li>Designers need to understand what the associate was doing in the app when the error occurred, not just the error itself.</li>
+					<li>It is helpful for designers to know the frequency of errors in order to prioritize accordingly. </li>
+				</ul>
+			</div>
+			<div class="spacerDiv">&nbsp;</div>
+
+			<p>Thus, we changed the format of the question from an open-ended question to a multi-select question with commonly known errors to quantify their frequency; we also provided an ‘other’ option to identify new errors. Then, we asked associates to describe what they were doing when the error happened. We shared the results from the revised survey with the product designers from our original focus group, who unanimously agreed that the results were an improvement over the original survey.
+			</p>
+			<p>Finally, while the survey captured a large number of responses and helped us keep a pulse on the current state of the department, talking face-to-face with Pickup associates in <b>interviews</b> provided the deepest insights into their everyday experiences. Though we learned about the current awareness of the survey and some reasons that associates may have participated or not participated in it, we also learned about some of the pain points Pickup associates face when doing their jobs. By documenting these interviews and witnessing the emotion behind them, we could give a voice to the real experiences of these associates, ultimately pushing for positive change within the department.
+			</p>
+
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="spacerDiv">&nbsp;</div>
+
+			<h5>REFLECTION</h5>
+			<p>I am very grateful for the opportunity to complete my first user research internship with Kroger Technology & Digital. Over the course of the summer, I grew as a researcher, data analyst, and a team member; the most rewarding aspects of my experience were getting to work with the User Research team and doing meaningful work that will impact the experience of Pickup associates.</p>
+			<div class="spacerDiv">&nbsp;</div>
+
+			<a href="index.html" class="btn btn-primary btn-lg">Back to all work</a>
+
+
+		 </div>
+
+		 <div class="spacerDiv">&nbsp;</div>
+		 <div class="spacerDiv">&nbsp;</div>
+
+		<!-- Footer -->
+		<div class="row">
+			<div class="col-sm-6 nav mx-auto center"><a class="navbar-brand center footer" href="#">&#127800;&nbsp;AMANDA LIU</a></div>
+			<div class="col-sm nav"><a href="index.html" class=" footer">Work</a></div>
+			<div class="col-sm nav"><a href="portfolioMore.html" class="footer">More</a></div>
+			<div class="col-sm nav"><a href="portfolioAbout.html" class="footer">About</a></div>
+			<div class="col-sm nav"><a href="portfolioContact.html" class="footer">Contact</a></div>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		
+	</div>
+    
+</body>
+</html>
