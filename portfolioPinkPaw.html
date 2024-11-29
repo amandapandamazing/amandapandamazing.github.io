@@ -1,0 +1,531 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pink Paw Mobile App</title>
+    
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/grid.css" rel="stylesheet">
+<link href="css/bootstrap-grid.css" rel="stylesheet">
+<script src="js/bootstrap.bundle.min.js"></script>
+	
+<!-- CSS -->
+<style>
+	
+	/*
+		div.col, div.col-1, div.col-2, div.col-3, div.col-4, div.col-5, div.col-6, div.col-7, div.col-8, div.col-9,div.col-10,div.col-11,div.col-12, div.col-sm, div.col-sm-1, div.col-sm-2, div.col-sm-3, div.col-sm-4, div.col-sm-5, div.col-sm-6, div.col-sm-7, div.col-sm-8, div.col-sm-9,div.col-sm-10,div.col-sm-11,div.col-sm-12, div.col-md, div.col-md-1, div.col-md-2, div.col-md-3, div.col-md-4, div.col-md-5, div.col-md-6, div.col-md-7, div.col-md-8, div.col-md-9,div.col-md-10,div.col-md-11,div.col-md-12,div.col-lg, div.col-lg-1, div.col-lg-2, div.col-lg-3, div.col-lg-4, div.col-lg-5, div.col-lg-6, div.col-lg-7, div.col-lg-8, div.col-lg-9,div.col-lg-10,div.col-lg-11,div.col-lg-12 {
+			padding-top: .65rem;
+			padding-bottom: .65rem;
+			
+			background-color: lightgrey;
+			border: 1px solid rgba(86,61, 124, .2);
+			
+		}
+	*/
+	
+	
+	html {
+		scroll-behavior:smooth;
+	}	
+
+	.callout{
+		margin: 20px 0;
+  		padding: 15px 30px 15px 15px;
+  		border-left: 5px solid #eee;
+	}
+	.callout-pink{
+		border-left-color:mediumvioletred;
+	}
+
+	.mainImage{
+		width: 100%;
+	}
+
+	.slide-embed{
+		text-align: center;
+	}
+	
+	.pageBody {
+		padding-bottom: 50px;
+		margin-left: 150px;
+		margin-right: 150px;
+	}
+
+	.textCenter {
+		padding: 50px 0;
+	}
+
+	.image1 {
+		width:100%;
+		display: block;
+		margin: auto;
+	}
+
+	.image2{
+		width: 100%;
+		border-radius: 3%;
+	}
+
+	.image3{
+		display: block;
+		margin-right: auto;
+		width:90%;
+	}
+
+	.image4{
+		display: block;
+		width:80%;
+		margin:auto;
+	}
+
+	.image5{
+		display: block;
+		width:60%;
+		margin:auto;
+	}
+
+	.image6{
+		display: block;
+		width:50%;
+		margin:auto;
+		margin-right:300px;
+	}
+	
+	.row1{
+			display:flex;
+			flex-direction: row;
+		}
+
+	p {
+		font-size: 17px;
+	}
+	
+	.display-4 {
+		padding-bottom: 20px;
+	}
+	
+	.display-6 {
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+		
+	.spacerDiv {
+		height: 40px;
+	}
+		
+	a:link {
+		text-decoration: none;
+	}
+	
+	a:visited {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	
+	a.nav-link, a.footer {
+		color: black;
+	}
+	
+	a.nav-link:hover, a.footer:hover {
+		color: #e95471;
+		transform: scale(1.05);
+		transition: all .4s ease;
+	}
+	
+	a.contactLink {
+		color: #e95471;
+	}
+	
+	a.contactHover {
+		color: #c22265;
+	}
+	
+	.btn-outline-primary{
+		border-color: #c22265;
+		color: #c22265;
+		margin-top: 10px;
+	}
+		
+	.btn-primary{
+		background-color: #A80046;
+		border-color: #A80046;
+		margin-top: 20px;
+	}
+	
+	.btn:hover {
+		background-color: #c22265;
+		border-color: #c22265;
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	.more:hover {
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	a.activeLink {
+		color: #e95471;
+	}
+	
+	.contact {
+		text-align: center;
+	}
+	
+	.navbar-toggler{
+		float: right;
+	}
+	
+	.mobileNav {
+		padding-top: 20px;
+	}
+	
+	.resume {
+		margin-left: 10px;
+	}
+	
+	@media (min-width: 768px) and (max-width: 992px) {
+		p {
+			font-size: 1.1rem;
+		}
+		.pageBody {
+			padding-bottom: 40px;
+			margin-left: 30px;
+			margin-right:30px;
+		}
+		.slideshow{
+			width: 700px;
+			height: 394px;
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.nav {
+			padding-top: 10px;
+		}
+		p {
+			font-size: 1.1rem;
+		}
+		.largeNav {
+			display: none;
+		}
+		.mobileNav {
+			display: block;
+		}
+		.pageBody {
+			padding-bottom: 30px;
+			margin-left: 10px;
+			margin-right:10px;
+		}
+		.image1{
+			height:300px;
+			width:600px;
+			margin-left:-90px;
+		}
+		.image3{
+			width: 70%;
+			height: auto;
+		}
+		.textCenter{
+			padding: 0px;
+		}
+		.row1{
+			display:flex;
+			flex-direction: column-reverse;
+		}
+		.image4, .image5, .image6{
+			width:100%;
+		}
+		.frame{
+			width:50%;
+		}
+
+	}
+	
+	@media (max-width: 576px) {
+		.center {
+		margin: auto;
+		}
+		.blank {
+			height: 0px;
+		}
+		.footer {
+			margin: auto;
+		}
+		.mobileNav{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.slideshow{
+			width: 500px;
+			height: 281px;
+		}
+	}
+
+		
+</style>
+    
+</head>
+
+<body>
+	
+	<!-- RESPONSIVE GRID -->
+	<div class="container">
+		
+		<!-- Global nav -->
+		<div class="row mobileNav">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html">&#127800;&nbsp;AMANDA LIU</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item active px-5">
+						<a class="nav-link" href="index.html">Work</a>
+					</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioMore.html">More</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioAbout.html">About</a>
+      				</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioContact.html">Contact</a>
+      				</li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+
+		<!-- Header -->
+		
+		<div class="row pageBody">
+
+			<div class="col"><img src="images/pinkpaw.png" alt="Hero image with the title Pink Paw Mobile App" class="mainImage"></div>
+		</div>
+
+		<!-- Body -->
+
+		 <div class="row pageBody">
+			<h5>BACKGROUND</h5>
+			<p>As part of the Google UX Design Certificate, I was challenged to design a mobile app for a cafe. I chose to focus specifically on the reservation user flow for a cat cafe, seeking to address the problem:
+			</p>
+
+			<div class="callout callout-pink">
+				<!--<h6>PROBLEM</h6>-->
+				<h5>Customers need an easy and efficient way to make and edit reservations.</h5>
+			</div>
+
+			<p>For context, Pink Paw Cafe is a (fictional!) local cat cafe that serves up both coffee and cats in a unique experience. Visitors can grab a cafe item on the cafe side of the building, while the other side lets them reserve time to cuddle with cats. The cafe strives to create a relaxing atmosphere and prides itself on helping many of its feline residents find homes.</p>
+			<p>With this problem in mind, I set out to accomplish my goal–to design a mobile app for Pink Paw Cafe that allows users to easily and quickly create, view, edit, and cancel reservations.</p>
+	
+			<div class="spacerDiv">&nbsp;</div>
+			
+			<h5>ROLE AND RESPONSIBILITIES</h5>
+			<div class="col">
+				<ul>
+					<li><b>My role: </b>UX designer and researcher designing the mobile app from conception to delivery</li>
+					<li><b>Responsibilities:</b> User research (conducting interviews, conducting usability tests), wireframing, low and high-fidelity prototyping with Figma
+						</li>
+				</ul>
+			</div>
+
+			<div class="spacerDiv">&nbsp;</div>
+
+			<h5>THE PROCESS</h5>
+			<div class="col"><img src="images/process.png" alt="
+				Graphic including the design process - empathize, define, ideate, prototype, and test." class="image2"></div>
+
+			<div class="spacerDiv">&nbsp;</div>
+			<h5>USER RESEARCH</h5>
+			<p>Before designing a solution, I first had to define the problem and understand my users. Who <i>were</i> my users? I started by first identifying my research goals and target audience.</p>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="col"><img src="images/pinkpawResearch1.png" alt="
+				Screenshot of research questions and target audience" class="image4"></div>
+			<div class="spacerDiv">&nbsp;</div>
+			<p>After identifying my target audience, I created an <b>interview</b> guide and reached out to four interviewees to learn more about their experiences and expectations from a cat cafe. What would motivate them to go to a cat cafe? How would they go about planning their visit, and what information would they seek? What challenges might they face? Interviews allowed me to delve into these questions and enrich my understanding of the problem.
+				For each participant, I created an <b>empathy map</b> to summarize their attitudes and behaviors.
+			</p>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="col"><img src="images/empathymap.png" alt="
+				Screenshot of an empathy map" class="image5"></div>
+			<div class="spacerDiv">&nbsp;</div>
+
+			<p>Based on these interviews, I discovered several <b>pain points</b> users might face when using an app such as this:</p>
+			<div class="col"><img src="images/painpoints.png" alt="
+				A summary of pain points" class="image2"></div>
+			<div class="spacerDiv">&nbsp;</div>
+
+			<p>Understanding these pain points was critical to informing the direction of my design. 
+				While my design would be focused on the reservation user flow, I still wanted to learn what users would need from 
+				other aspects of the site (such as the menu or rewards). Overall, users want to have access to important information such 
+				as timeslots and refund policies, while also having the flexibility to edit or change their appointment.
+				From there, I created two user personas–<b>Biyu and Darien</b>–who represented two different user groups with different goals.</p>
+			<div class="col"><img src="images/personas.png" alt="
+				A view of 2 user personas" class="image2"></div>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="col"><img src="images/persona1.png" alt="
+				A view of 2 user personas" class="image2"></div>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="callout callout-pink">
+				<!--<h6>PROBLEM</h6>-->
+				<h5>Problem Statement</h5>
+				<p>Biyu is an outgoing college student who needs a way to see special events and promotions, a simple reservation process, and a menu that includes details about ingredients because she wants to have a memorable experience with friends and has dietary needs she must plan for.
+					</p>
+			</div>
+			<div class="col"><img src="images/persona2.png" alt="
+				A view of 2 user personas" class="image2"></div>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="callout callout-pink">
+				<!--<h6>PROBLEM</h6>-->
+				<h5>Problem Statement</h5>
+				<p>
+					Darien is a busy high school teacher and prospective cat owner who needs a way to make reservations for him and his partner that is efficient, simple, and offers assistance because he has a tight schedule and is not very tech savvy.
+					</p>
+			</div>
+
+			<div class="spacerDiv">&nbsp;</div>
+			<p>With these personas and their goals in mind, I explored the current paths they might take to make a reservation and created a <b>user journey map</b>. This exercise helped me empathize with the user at each step of the process and revealed ways my design could fill in any gaps in their experience. </p>
+			<div class="col"><img src="images/userjourney.png" alt="
+				Darien's user journey" class="image2"></div>
+			<div class="spacerDiv">&nbsp;</div>
+
+			<p>Additionally, creating both big-picture and close-up <b>storyboards</b> allowed me to visualize the user flow Darien might go through, convey the potential of my app with a narrative, and to explore all the interactions that contribute to their user experience.</p>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="col"><img src="images/storyboard1.png" alt="
+				Big-picture storyboard" class="image4"></div>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="col"><img src="images/storyboard2.png" alt="
+				Close-up storyboard" class="image4"></div>
+			<div class="spacerDiv">&nbsp;</div>
+
+			<div class="spacerDiv">&nbsp;</div>
+			<h5>STARTING THE DESIGN</h5>
+			<p>Before creating digital wireframes, I sketched out some ideas on paper to explore different ways to address user needs. For example, I created a variety of options for the home screen, but I decided to highlight features that gave users easy access to the app’s important functions (making a reservation and seeing the menu) as well as special events and promotions.</p>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="col"><img src="images/papersketch2.jpg" alt="
+				Examples of paper sketches for the home page" class="image5"></div>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="col"><img src="images/papersketch1.jpg" alt="
+				More examples of paper sketches" class="image5"></div>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="spacerDiv">&nbsp;</div>
+			
+			<p>As I converted my paper designs into digital <b>wireframes</b>, I continued to consider user feedback from my earlier research.
+			</p>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="col"><img src="images/wireframe1.png" alt="
+				Examples of paper sketches for the home page" class="image6"></div>
+
+				
+			 <div class="spacerDiv">&nbsp;</div>
+		 	<div class="spacerDiv">&nbsp;</div>
+			<p>Below is the <b>low-fidelity prototype</b> linking these wireframes to create the user flow of making a reservation.</p>
+		</div>
+
+			<div class="embed-responsive embed-responsive-16by9 slide-embed">
+
+				<!--<iframe class="embed-responsive-item slideshow" src="https://1drv.ms/b/c/7e12d2eeaf558f1f/IQT8531OcUdMT55SfK6LEFdOAUb2A7YpGC9rZPy-BzXaB3o" width="1200" height="576" scrolling="no"></iframe>
+			 -->
+				<iframe class="frame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/wvlPSy0sulMRgsE6SKY0GJ/Google-UX-Project-1-Wireframes?node-id=1-5&starting-point-node-id=1%3A5&embed-host=share" allowfullscreen></iframe>
+	
+		</div>
+
+		<div class="row pageBody">
+			<div class="spacerDiv">&nbsp;</div>
+		 	<div class="spacerDiv">&nbsp;</div>
+			 <div class="col"><img src="images/pinkpawlofi.png" alt="
+				Lofi prototype" class="image5"></div>
+				<div class="spacerDiv">&nbsp;</div>
+				<div class="spacerDiv">&nbsp;</div>
+			<p>After completing this initial prototype, I conducted a <b>usability study</b> with 5 participants to gain insights on what could be improved before moving on to mock-ups. I wanted to know how long it would take for participants to complete a reservation, if the user flow was intuitive to understand, and if there were any common user errors or challenges. This step was crucial, as it highlighted some major flaws in the design to address.</p>
+			<div class="col"><img src="images/researchinsights.png" alt="
+				Research insights" class="image4"></div>
+				<div class="spacerDiv">&nbsp;</div>
+
+			<div class="spacerDiv">&nbsp;</div>
+			<h5>REFINING THE DESIGN</h5>
+			<P>Based on the usability study, I made some changes going into <b>high-fidelity mockups</b>. 
+				One main feature I decided to change based on feedback was an interactive component showing the current busyness in either the cafe or the cat lounge.
+				Though users thought the information presented there was helpful, the format was confusing for all 5 participants. After discovering this insight,
+				I was able to create a more intuitive and familiar way to view this information that has clear action cues and also gives users a shortcut to the 
+				app’s main functions.</P>
+				<div class="spacerDiv">&nbsp;</div>
+				<div class="col"><img src="images/pinkpaw1.png" alt="
+					Showing the changes between the home screen before and after the usability test" class="image5"></div>
+				<div class="spacerDiv">&nbsp;</div>
+				<div class="col"><img src="images/pinkpaw2.png" alt="
+					Several high fidelity mockups including a home screen, reservation screen, and cat lounge rules." class="image2"></div>
+				<div class="spacerDiv">&nbsp;</div>
+				<div class="spacerDiv">&nbsp;</div>
+				<p>Finally, I linked the mockups to create an interactive <b>high-fidelity prototype</b> (which can be explored below).</p>
+		</div>
+		<div class="embed-responsive embed-responsive-16by9 slide-embed">
+			<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" class="frame" src="https://embed.figma.com/proto/AlBwO1t3VNeOxFRF9S4AHL/Google-UX-Project-1?type=design&node-id=197-792&viewport=673%2C841%2C0.34&scaling=scale-down&starting-point-node-id=197%3A792&embed-host=share" allowfullscreen></iframe>
+
+		</div>
+		
+		<div class="row pageBody">
+			<div class="spacerDiv">&nbsp;</div>
+		 	<div class="spacerDiv">&nbsp;</div>
+			 <div class="col"><img src="images/pinkpawhifi.png" alt="
+				Lofi prototype" class="image5"></div>
+				<div class="spacerDiv">&nbsp;</div>
+				<div class="spacerDiv">&nbsp;</div>
+			
+			<div class="callout callout-pink">
+				<h5>The Pink Paw mobile app not only meets the users’ needs, but also gets them excited about visiting the cafe.</h5>
+			</div>
+
+			<div class="spacerDiv">&nbsp;</div>
+
+			<h5>NEXT STEPS</h5>
+			<div class="col">
+			<ul>
+				<li>Conduct another round of usability tests to evaluate whether user needs have been met and pain points have been addressed.</li>
+				<li>Further consider ways to improve accessibility, such as language options, different text sizes, high contrast mode, etc.</li>
+				<li>Build out and test the menu and rewards user flows with new prototypes.</li>
+			</ul>
+			</div>
+
+		 <div class="spacerDiv">&nbsp;</div>
+
+			<h5>REFLECTION</h5>
+			<p>During the summer of 2023, my first real foray into UX research and design was with the Google UX Design Certificate–an exciting 
+				opportunity for a beginner like me to learn the ropes, build a foundation in design thinking and skills, and gain hands-on experience 
+				with creating deliverables. Though I didn’t continue with the certificate as my attention would soon turn to coursework during the semester, 
+				it was a rewarding experience to finish my first UX project from conception to final prototype. The curiosity and desire I felt to create something 
+				useful and visually pleasing was what drove me during each iteration of the design, and what cemented my passion for the field of UX.</p>
+			<div class="spacerDiv">&nbsp;</div>
+
+			<a href="index.html" class="btn btn-primary btn-lg">Back to all work</a>
+		 </div>
+
+		 <div class="spacerDiv">&nbsp;</div>
+		 <div class="spacerDiv">&nbsp;</div>
+
+		<!-- Footer -->
+		<div class="row">
+			<div class="col-sm-6 nav mx-auto center"><a class="navbar-brand center footer" href="#">&#127800;&nbsp;AMANDA LIU</a></div>
+			<div class="col-sm nav"><a href="index.html" class=" footer">Work</a></div>
+			<div class="col-sm nav"><a href="portfolioMore.html" class="footer">More</a></div>
+			<div class="col-sm nav"><a href="portfolioAbout.html" class="footer">About</a></div>
+			<div class="col-sm nav"><a href="portfolioContact.html" class="footer">Contact</a></div>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		
+	</div>
+    
+</body>
+</html>
