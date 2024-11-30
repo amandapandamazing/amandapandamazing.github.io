@@ -1,0 +1,586 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>XP Journey</title>
+    
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/grid.css" rel="stylesheet">
+<link href="css/bootstrap-grid.css" rel="stylesheet">
+<script src="js/bootstrap.bundle.min.js"></script>
+	
+<!-- CSS -->
+<style>
+	
+	/*
+		div.col, div.col-1, div.col-2, div.col-3, div.col-4, div.col-5, div.col-6, div.col-7, div.col-8, div.col-9,div.col-10,div.col-11,div.col-12, div.col-sm, div.col-sm-1, div.col-sm-2, div.col-sm-3, div.col-sm-4, div.col-sm-5, div.col-sm-6, div.col-sm-7, div.col-sm-8, div.col-sm-9,div.col-sm-10,div.col-sm-11,div.col-sm-12, div.col-md, div.col-md-1, div.col-md-2, div.col-md-3, div.col-md-4, div.col-md-5, div.col-md-6, div.col-md-7, div.col-md-8, div.col-md-9,div.col-md-10,div.col-md-11,div.col-md-12,div.col-lg, div.col-lg-1, div.col-lg-2, div.col-lg-3, div.col-lg-4, div.col-lg-5, div.col-lg-6, div.col-lg-7, div.col-lg-8, div.col-lg-9,div.col-lg-10,div.col-lg-11,div.col-lg-12 {
+			padding-top: .65rem;
+			padding-bottom: .65rem;
+			
+			background-color: lightgrey;
+			border: 1px solid rgba(86,61, 124, .2);
+			
+		}
+	*/
+	
+	
+	html {
+		scroll-behavior:smooth;
+	}	
+
+	.callout{
+		margin: 20px 0;
+  		padding: 15px 30px 15px 15px;
+  		border-left: 5px solid #eee;
+	}
+	.callout-purple{
+		border-left-color:blueviolet;
+	}
+
+	.mainImage{
+		width: 100%;
+	}
+
+	.slide-embed{
+		text-align: center;
+	}
+	
+	.pageBody {
+		padding-bottom: 50px;
+		margin-left: 150px;
+		margin-right: 150px;
+	}
+
+	.textCenter {
+		padding: 50px 0;
+	}
+
+	.image1 {
+		width:100%;
+		display: block;
+		margin: auto;
+	}
+
+	.image2{
+		width: 100%;
+		border-radius: 3%;
+	}
+
+	.image3{
+		display: block;
+		margin-right: auto;
+		width:90%;
+	}
+
+	.image4{
+		display: block;
+		width:80%;
+		margin:auto;
+	}
+
+	.image5{
+		display: block;
+		width:60%;
+		margin:auto;
+	}
+
+	.image6{
+		display: block;
+		width:50%;
+		margin:auto;
+		margin-right:300px;
+	}
+	
+	.row1{
+			display:flex;
+			flex-direction: row;
+		}
+
+	p {
+		font-size: 17px;
+	}
+	
+	.display-4 {
+		padding-bottom: 20px;
+	}
+	
+	.display-6 {
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+		
+	.spacerDiv {
+		height: 40px;
+	}
+		
+	a:link {
+		text-decoration: none;
+	}
+	
+	a:visited {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	
+	a.nav-link, a.footer {
+		color: black;
+	}
+	
+	a.nav-link:hover, a.footer:hover {
+		color: #e95471;
+		transform: scale(1.05);
+		transition: all .4s ease;
+	}
+	
+	a.contactLink {
+		color: #e95471;
+	}
+	
+	a.contactHover {
+		color: #c22265;
+	}
+	
+	.btn-outline-primary{
+		border-color: #c22265;
+		color: #c22265;
+		margin-top: 10px;
+	}
+		
+	.btn-primary{
+		background-color: #A80046;
+		border-color: #A80046;
+		margin-top: 20px;
+	}
+	
+	.btn:hover {
+		background-color: #c22265;
+		border-color: #c22265;
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	.more:hover {
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	a.activeLink {
+		color: #e95471;
+	}
+	
+	.contact {
+		text-align: center;
+	}
+	
+	.navbar-toggler{
+		float: right;
+	}
+	
+	.mobileNav {
+		padding-top: 20px;
+	}
+	
+	.resume {
+		margin-left: 10px;
+	}
+	
+	@media (min-width: 768px) and (max-width: 992px) {
+		p {
+			font-size: 1.1rem;
+		}
+		.pageBody {
+			padding-bottom: 40px;
+			margin-left: 30px;
+			margin-right:30px;
+		}
+		.slideshow{
+			width: 700px;
+			height: 394px;
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.nav {
+			padding-top: 10px;
+		}
+		p {
+			font-size: 1.1rem;
+		}
+		.largeNav {
+			display: none;
+		}
+		.mobileNav {
+			display: block;
+		}
+		.pageBody {
+			padding-bottom: 30px;
+			margin-left: 10px;
+			margin-right:10px;
+		}
+		.image1{
+			height:300px;
+			width:600px;
+			margin-left:-90px;
+		}
+		.image3{
+			width: 70%;
+			height: auto;
+		}
+		.textCenter{
+			padding: 0px;
+		}
+		.row1{
+			display:flex;
+			flex-direction: column-reverse;
+		}
+		.image4, .image5, .image6{
+			width:100%;
+		}
+		.frame{
+			width:50%;
+		}
+
+	}
+	
+	@media (max-width: 576px) {
+		.center {
+		margin: auto;
+		}
+		.blank {
+			height: 0px;
+		}
+		.footer {
+			margin: auto;
+		}
+		.mobileNav{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.slideshow{
+			width: 500px;
+			height: 281px;
+		}
+	}
+
+		
+</style>
+    
+</head>
+
+<body>
+	
+	<!-- RESPONSIVE GRID -->
+	<div class="container">
+		
+		<!-- Global nav -->
+		<div class="row mobileNav">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html">&#127800;&nbsp;AMANDA LIU</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item active px-5">
+						<a class="nav-link" href="index.html">Work</a>
+					</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioMore.html">More</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioAbout.html">About</a>
+      				</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioContact.html">Contact</a>
+      				</li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+
+		<!-- Header -->
+		
+		<div class="row pageBody">
+
+			<div class="col"><img src="images/XPjourney1.png" alt="Hero image with the title XP Journey, Mobile App Design" class="mainImage"></div>
+		</div>
+
+		<!-- Body -->
+
+		 <div class="row pageBody">
+			<h5>BACKGROUND</h5>
+			<p>In ACCAD 5141 Interactive Arts Media: UI/UX, we were encouraged to explore a problem space–experiences 
+				with video game interfaces–and the challenges users face. However, after talking to users and discovering a gap in their experience–finding time in 
+				their busy lives to relax and wanting to connect with others–I got the go-ahead to explore another video-game-related idea focusing less on game 
+				interfaces and more on the role video games play in our lives. 
+			</p>
+
+			<div class="callout callout-purple">
+
+				<h5>XP Journey was conceived as a way for gamers of all skill levels to 
+					destress, document play sessions and progress in a virtual journal, make lists and discover new games, and share their thoughts with friends and a 
+					virtual community of fellow players.</h5>
+			</div>
+
+			<div class="spacerDiv">&nbsp;</div>
+			
+			<h5>ROLE AND RESPONSIBILITIES</h5>
+			<div class="col">
+				<ul>
+					<li><b>My role: </b>UX designer and researcher designing the mobile app from conception to delivery</li>
+					<li><b>Responsibilities:</b> User research (conducting interviews, conducting usability tests), wireframing, prototyping with Figma
+						</li>
+				</ul>
+			</div>
+
+			<div class="spacerDiv">&nbsp;</div>
+
+			<h5>THE PROCESS</h5>
+			<p>
+				Applying the design thinking framework to the main stages of the process we followed in class, I first seeked to explore the problem space, 
+				empathize with users through user research, and to define the problem before delving into design. After understanding the users and their problem,
+				I created concepts for an app to address this problem, delivered a high-fidelity prototype in Figma, and conducted usability testing to validate whether 
+				my design was effective.
+			</p>
+		
+			<div class="col"><img src="images/XPJourney2.png" alt="
+				Graphic including the design process - empathize, define, ideate, prototype, and test." class="image2"></div>
+			
+			<h5>PROBLEM SPACE ANALYSIS</h5>
+			<p>Before I arriving at the idea of XP Journey, I first had to understand the problem I was trying to address and the users I would be designing for. 
+				I started by conducting <b>interviews</b> to learn about why people play video games, whether they play by themselves or with others, 
+				previous experiences with games, and what stood out to them from their favorite games. At this point, I was collecting data both about the role of games in people's lives 
+				and their perception of video game interfaces.
+			</p>
+
+			<p>I interviewed 3 participants who each had fairly different backgrounds, but a shared love for playing games. Between all three participants, there 
+				were some similarities in why they played games: </p>
+
+				<div class="col"><img src="images/XPJourney3.png" alt="
+				People play games to destress, to connect with others, and to get a sense of achievement." class="image2"></div>
+			
+			<p>Based on my findings, I created 3 user personas, <b>Devon, Krista, and Arthur</b>, along with empathy maps that summarized each persona's attitudes 
+				and behaviors.</p>
+
+				<div class="callout callout-purple">
+					<h5>Devon the Indie Dev</h5>
+				</div>
+				<img src="images/XPJourney4.png" alt="User persona: Devon the indie Dev" class="image2">
+				<div class="spacerDiv">&nbsp;</div>
+				<img src="images/XPJourney5.png" alt="Devon's empathy map" class="image2">
+				<div class="spacerDiv">&nbsp;</div>
+
+				<div class="callout callout-purple">
+					<h5>Krista the Student</h5>
+				</div>
+				<img src="images/XPJourney6.png" alt="User persona: Krista the Student" class="image2">
+				<div class="spacerDiv">&nbsp;</div>
+				<img src="images/XPJourney7.png" alt="Krista's empathy map" class="image2">
+				<div class="spacerDiv">&nbsp;</div>
+
+				<div class="callout callout-purple">
+					<h5>Arthur the Dad</h5>
+				</div>
+				<img src="images/XPJourney8.png" alt="User persona: Arthur the Dad" class="image2">
+				<div class="spacerDiv">&nbsp;</div>
+				<img src="images/XPJourney9.png" alt="Arthur's empathy map" class="image2">
+				<div class="spacerDiv">&nbsp;</div>
+				<div class="spacerDiv">&nbsp;</div>
+
+				<h5>CONCEPT DEVELOPMENT</h5>
+				<p>Though each of these personas and their goals influenced the direction of my final design, Krista's story inspired me to think deeper about the 
+					problem I wanted to address with my design. Ultimately, I decided to shift away from the issue of game UI and investigate <b>the role video games play 
+					in the greater context of our lives.</b>
+				</p>
+				<p>There were several key pain points that informed my design:</p>
+				<div class="row">
+					<div class="col-sm">
+						<div class="callout callout-purple">
+							<h5>PAIN POINTS</h5>
+						</div>
+						<div class="col">
+							<ul>
+								<li>Users don't have as much time for games in their busy schedules, and may <b>lose track of where they left off.</b></li>
+								<li>Users want to <b>explore new games</b>, but may not currently have the spare time or money to do so.</li>
+								<li>Users may prefer to play some games by themselves, but still desire <b>connection and community.</b></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="callout callout-purple">
+							<h5>XP JOURNEY</h5>
+						</div>
+						<div class="col">
+							<ul>
+								<li>With XP Journey, users can create journal entries to <b>document their progress</b> and feel accomplished.</li>
+								<li>Users can discover new games, view other users' reviews, and <b>save games for later</b> with a wishlist.</li>
+								<li>XP Journey acts as a <b>social media platform</b>, as users can post their journal entries, comment, like, and follow others.</li>
+							</ul>
+					</div>
+				</div>
+
+				<div class="spacerDiv">&nbsp;</div>
+				<p>After pinning down the idea for my app, I created several very basic <b>napkin sketches</b> to get an idea for what this could look like. Each user would have 
+					their own "journey" with their journal entries, from which they could create new entries in either a written or scrapbook form.
+				</p>
+				<img src="images/XPJourney10.png" alt="Napkin sketches" class="image2">
+			</div>
+
+			<!--
+			<div class="embed-responsive embed-responsive-16by9 slide-embed">
+
+				
+			 <iframe class="slideshow" src="https://1drv.ms/b/c/7e12d2eeaf558f1f/IQSEA9FjiqOPRJDtKCqrZgPVAZ4a6pu4wXN0bhlQ6cZhf1k" width="1200" height="576" frameborder="0" scrolling="no"></iframe>
+	
+		</div>-->
+		<div class="spacerDiv">&nbsp;</div>
+		<div class="spacerDiv">&nbsp;</div>
+		<h5>WIREFRAMES & PROTOTYPE</h5>
+			<p>
+				Rather than starting with a low-fidelity prototype as I had done previously, for this project we went from sketches directly to <b>high-fidelity wireframes</b> in Figma. 
+				The focus was to show users a more polished prototype during testing for more accurate feedback; additionally, by customizing premade assets, we could expedite 
+				the prototyping process even if changes to the hi-fi prototype need to be made.
+			</p>
+			<p>
+				One main consideration I focused on in this project was <b>designing for the device</b> (I chose to design for iOS) and following interface design guidelines. This meant using components 
+				that were familiar and intuitive to iOS users' mental maps; using a package in Figma helped me to do this easily, while still customizing elements to be visually cohesive.
+			</p>
+			<p>
+				To demonstrate the different functions of XP Journey, I came up with 5 <b>user flows</b> (from the perspective of our persona, Krista):
+			</p>
+			<div class="col">
+			<div class="callout callout-purple">
+				<h6>USER FLOWS</h6>
+				<div class="col">
+					<ol>
+						<li>Follow back your friend Devon (@devon.the.dev)</li>
+						<li>Customize your profile by changing the banner to a purple star gradient</li>
+						<li>Make a new scrapbook-style journal entry about “Life is Strange” and publish it to your profile</li>
+						<li>Add “Ni No Kuni: Wrath of the White Witch” to your “Want to Play” list from the Explore page</li>
+						<li>Access your feed and view your friend Devon’s post</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<div class="spacerDiv">&nbsp;</div>
+			<p>I then built out each of these flows in Figma.</p>
+			<img src="images/XPJourney11.png" alt="An example of a user flow in Figma" class="image4">
+
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="spacerDiv">&nbsp;</div>
+			<p>Finally, I linked the wireframes to create a high-fidelity prototype.</p>
+			<img src="images/XPJourney12.png" alt="Some screens from the final prototype" class="image2">
+			<img src="images/XPJourney13.png" alt="Some more screens from the final prototype" class="image2">
+
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="callout callout-purple">
+				<h5>FIGMA PROTOTYPE</h5>
+				<p>You can <b>interact</b> with the high-fidelity prototype below; use fullscreen for best experience!</p>
+			</div>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9 slide-embed">
+			<iframe class="frame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/DbKmKpE15IReL5kmDUEZ28/XP-Journey?page-id=0%3A1&node-id=5-790&viewport=429%2C287%2C0.34&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5%3A790&embed-host=share" allowfullscreen></iframe>
+		</div>
+
+		
+		<div class="row pageBody">
+			<div class="spacerDiv">&nbsp;</div>
+		 	<div class="spacerDiv">&nbsp;</div>
+			<h5>USABILITY TESTING</h5>
+			<p>Following the completion of my final prototype, I conducted usability tests to evaluate the effectiveness of my design 
+				and any gaps. The participant sample consisted of 5 people within the target demographic for this app (defined as any 
+				individual interested in playing and keeping track of games, specifically in the teenager to young adult age range who might connect with the social 
+				media aspect of the app.) 
+			</p>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="spacerDiv">&nbsp;</div>
+			<img src="images/XPJourney14.png" alt="screenshot of the user test plan" class="image5">
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="spacerDiv">&nbsp;</div>
+			<p>For each participant, I kept track of several metrics such as time on task and task completion as they went through each user flow. Additionally, after completing the user flow, 
+				I asked them to describe their experience and rate the difficulty of completing the user flow. Finally, I concluded with several questions about their 
+				overall experience, suggestions, and whether they would be likely to use the app.
+			</p>
+
+			<div class="row">
+				<div class="col">
+				<div class="callout callout-purple">
+					<h6>METRICS</h6>
+					<div class="col">
+						<ol>
+							<li>Time on task (learnability and efficiency)</li>
+							<li>Task completion</li>
+							<li>Errors</li>
+							<li>Obstacles</li>
+							<li>User experience</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<img src="images/XPJourney15.png" alt="screenshot of the user test plan" class="image4">
+		 	<div class="spacerDiv">&nbsp;</div>
+
+			<p>Overall, all of the participants were able to figure out the tasks and had a positive experience using the app. Though participants had varying difficulty with each task, some aspects of tasks were noticeably harder (knowing where to go to follow someone back, knowing how to create a new entry) while others were easier (customizing the profile, adding to a list from the Explore page, and looking a post on the feed).</p>
+
+			<img src="images/XPJourney17.png" alt="Usability test results" class="image2">
+
+			<p>Based on the fact that none of the tasks averaged higher than a 2 in difficulty and that all participants were likely or very likely to use the app (averaging 4.4 out of 5), I believe that XP Journey has <b>great potential to provide value to users.</b></p>
+
+			<img src="images/XPJourney19.png" alt="Some quotes from users" class="image2">
+
+			<h5>NEXT STEPS</h5>
+			<div class="col">
+			<ul>
+				<li>Make it easier to see followers and follow requests</li>
+				<li>Add suggested users to the Explore page</li>
+				<li>Change ‘My Journey’ to ‘Profile’ for clarity</li>
+				<li>Make the user ratings more prominent when you look at a game</li>
+				<li>Explore a more prominent and intuitive way to create journal entries</li>
+			</ul>
+			</div>
+
+		 	<div class="spacerDiv">&nbsp;</div>
+			<h5>REFLECTION</h5>
+			<p>
+				Getting to see this project through from exploring a problem to delivering a polished prototype was incredibly rewarding. My favorite parts of 
+				the process were refining the visual design of the app, gathering feedback from users, and witnessing them interacting with (and getting excited about!) 
+				XP Journey.
+			</p>
+			<div class="spacerDiv">&nbsp;</div>
+
+			<a href="index.html" class="btn btn-primary btn-lg">Back to all work</a>
+		 </div>
+
+		 <div class="spacerDiv">&nbsp;</div>
+		 <div class="spacerDiv">&nbsp;</div>
+
+		<!-- Footer -->
+		<div class="row">
+			<div class="col-sm-6 nav mx-auto center"><a class="navbar-brand center footer" href="#">&#127800;&nbsp;AMANDA LIU</a></div>
+			<div class="col-sm nav"><a href="index.html" class=" footer">Work</a></div>
+			<div class="col-sm nav"><a href="portfolioMore.html" class="footer">More</a></div>
+			<div class="col-sm nav"><a href="portfolioAbout.html" class="footer">About</a></div>
+			<div class="col-sm nav"><a href="portfolioContact.html" class="footer">Contact</a></div>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		
+	</div>
+
+    
+</body>
+</html>
