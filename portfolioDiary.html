@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Design Diary</title>
+    
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/grid.css" rel="stylesheet">
+<link href="css/bootstrap-grid.css" rel="stylesheet">
+<script src="js/bootstrap.bundle.min.js"></script>
+	
+<!-- CSS -->
+<style>
+	
+	/*
+		div.col, div.col-1, div.col-2, div.col-3, div.col-4, div.col-5, div.col-6, div.col-7, div.col-8, div.col-9,div.col-10,div.col-11,div.col-12, div.col-sm, div.col-sm-1, div.col-sm-2, div.col-sm-3, div.col-sm-4, div.col-sm-5, div.col-sm-6, div.col-sm-7, div.col-sm-8, div.col-sm-9,div.col-sm-10,div.col-sm-11,div.col-sm-12, div.col-md, div.col-md-1, div.col-md-2, div.col-md-3, div.col-md-4, div.col-md-5, div.col-md-6, div.col-md-7, div.col-md-8, div.col-md-9,div.col-md-10,div.col-md-11,div.col-md-12,div.col-lg, div.col-lg-1, div.col-lg-2, div.col-lg-3, div.col-lg-4, div.col-lg-5, div.col-lg-6, div.col-lg-7, div.col-lg-8, div.col-lg-9,div.col-lg-10,div.col-lg-11,div.col-lg-12 {
+			padding-top: .65rem;
+			padding-bottom: .65rem;
+			
+			background-color: lightgrey;
+			border: 1px solid rgba(86,61, 124, .2);
+			
+		}
+	*/
+	
+	
+	html {
+		scroll-behavior:smooth;
+	}	
+
+	.callout{
+		margin: 20px 0;
+  		padding: 15px 30px 15px 15px;
+  		border-left: 5px solid #eee;
+	}
+	.callout-color{
+		border-left-color:#e95471;
+	}
+
+	.mainImage{
+		width: 100%;
+	}
+
+	.slide-embed{
+		text-align: center;
+	}
+	
+	.pageBody {
+		padding-bottom: 50px;
+		margin-left: 150px;
+		margin-right: 150px;
+	}
+
+	.textCenter {
+		padding: 50px 0;
+	}
+
+	.image1 {
+		width:100%;
+		display: block;
+		margin: auto;
+	}
+
+	.image2{
+		width: 100%;
+		border-radius: 3%;
+	}
+
+	.image3{
+		display: block;
+		margin-right: auto;
+		width:90%;
+	}
+
+	.image4{
+		display: block;
+		width:80%;
+		margin:auto;
+	}
+
+	.image5{
+		display: block;
+		width:60%;
+		margin:auto;
+	}
+
+	.image6{
+		display: block;
+		width:50%;
+		margin:auto;
+		margin-right:300px;
+	}
+	
+	.row1{
+			display:flex;
+			flex-direction: row;
+		}
+
+	p {
+		font-size: 17px;
+	}
+	
+	.display-4 {
+		padding-bottom: 20px;
+	}
+	
+	.display-6 {
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+		
+	.spacerDiv {
+		height: 40px;
+	}
+		
+	a:link {
+		text-decoration: none;
+	}
+	
+	a:visited {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	
+	a.nav-link, a.footer {
+		color: black;
+	}
+	
+	a.nav-link:hover, a.footer:hover {
+		color: #e95471;
+		transform: scale(1.05);
+		transition: all .4s ease;
+	}
+	
+	a.contactLink {
+		color: #e95471;
+	}
+	
+	a.contactHover {
+		color: #c22265;
+	}
+	
+	.btn-outline-primary{
+		border-color: #c22265;
+		color: #c22265;
+		margin-top: 10px;
+	}
+		
+	.btn-primary{
+		background-color: #A80046;
+		border-color: #A80046;
+		margin-top: 20px;
+	}
+	
+	.btn:hover {
+		background-color: #c22265;
+		border-color: #c22265;
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	.more:hover {
+		transform: scale(1.1);
+		transition: all .4s ease;
+	}
+	
+	a.activeLink {
+		color: #e95471;
+	}
+	
+	.contact {
+		text-align: center;
+	}
+	
+	.navbar-toggler{
+		float: right;
+	}
+	
+	.mobileNav {
+		padding-top: 20px;
+	}
+	
+	.resume {
+		margin-left: 10px;
+	}
+
+	.carousel-control-prev-icon {
+ 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+	}
+
+	.carousel-control-next-icon {
+  		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+	}
+
+
+	
+	@media (min-width: 768px) and (max-width: 992px) {
+		p {
+			font-size: 1.1rem;
+		}
+		.pageBody {
+			padding-bottom: 40px;
+			margin-left: 30px;
+			margin-right:30px;
+		}
+		.slideshow{
+			width: 700px;
+			height: 394px;
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.nav {
+			padding-top: 10px;
+		}
+		p {
+			font-size: 1.1rem;
+		}
+		.largeNav {
+			display: none;
+		}
+		.mobileNav {
+			display: block;
+		}
+		.pageBody {
+			padding-bottom: 30px;
+			margin-left: 10px;
+			margin-right:10px;
+		}
+		.image1{
+			height:300px;
+			width:600px;
+			margin-left:-90px;
+		}
+		.image3{
+			width: 70%;
+			height: auto;
+		}
+		.textCenter{
+			padding: 0px;
+		}
+		.row1{
+			display:flex;
+			flex-direction: column-reverse;
+		}
+		.image4, .image5, .image6{
+			width:100%;
+		}
+		.frame{
+			width:50%;
+		}
+
+	}
+	
+	@media (max-width: 576px) {
+		.center {
+		margin: auto;
+		}
+		.blank {
+			height: 0px;
+		}
+		.footer {
+			margin: auto;
+		}
+		.mobileNav{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.slideshow{
+			width: 500px;
+			height: 281px;
+		}
+	}
+
+		
+</style>
+    
+</head>
+
+<body>
+	
+	<!-- RESPONSIVE GRID -->
+	<div class="container">
+		
+		<!-- Global nav -->
+		<div class="row mobileNav">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html">&#127800;&nbsp;AMANDA LIU</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item active px-5">
+						<a class="nav-link" href="index.html">Work</a>
+					</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioMore.html">More</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioAbout.html">About</a>
+      				</li>
+					<li class="nav-item">
+        				<a class="nav-link px-5" href="portfolioContact.html">Contact</a>
+      				</li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+
+		<!-- Header -->
+		
+		<div class="row pageBody">
+			<div class="col"><img src="images/designdiary.png" alt="Hero image with the title XP Journey, Mobile App Design" class="mainImage"></div>
+		</div>
+
+		<!-- Body -->
+		<div class="row pageBody">
+			<h5>BACKGROUND</h5>
+			<p>In COMM 3545: HCI + UX (the course that ignited my passion for the field!), we were presented with a challenge: to <b>evaluate 5 interactive designs</b>, including both 
+				physical and digital products, on the <b>usability goals, heuristics, </b> and other concepts we studied in class. Additionally, we were encouraged to present our evaluations in a
+				creative and novel way. When choosing the medium for my design diary, one question I considered was:
+			</p>
+
+			<div class="callout callout-color">
+				<h5>How can I create a positive experience for the person interacting with my project while presenting my own experiences with different products?</h5>
+			</div>
+
+			<p>Since I was evaluating interactive products, I decided to make my own project its own interactive form of media: a <b>visual novel.</b> While still telling a story 
+				like a traditional novel, visual novels allow the viewer to take control of the story and make choices. To make the project even more engaging, I 
+				communicated my evaluations through a narrative and Pokemon-like "battles" with each product.
+			</p>
+
+			<!--<div class="col"><img src="images/designdiary1.png" alt="
+				Screenshot from the final visual novel" class="image2"></div>-->
+
+				<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+						<li data-bs-target="#carousel" data-bs-slide-to="1"></li>
+						<li data-bs-target="#carousel" data-bs-slide-to="2"></li>
+					  </ol>
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img class="d-block w-100 image2" src="images/designdiary1.png" alt="First slide">
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block w-100 image2" src="images/designdiary2.png" alt="Second slide">
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block w-100 image2" src="images/designdiary3.png" alt="Third slide">
+					  </div>
+					</div>
+					<a class="carousel-control-prev" role="button" data-bs-target="#carousel" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carousel" role="button" data-bs-target="#carousel" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</a>
+				  </div>
+
+				<div class="spacerDiv">&nbsp;</div>
+				<div class="spacerDiv">&nbsp;</div>
+
+				<h5>KEY CONCEPTS</h5>
+				<img src="images/designdiary4.png" alt="7 Usability Goals" class="image2">
+				<p>When evaluating each product, I considered how well they did based on the heuristics we discussed in class. Many of these concepts fit under the 
+					umbrella of the <b>7 usability goals</b> we discussed in class. For example, I evaluated 
+					products on <b>functionality</b>. How <b>effective</b> is the product (does it work)? And even if it works, how <b>efficient</b> is it 
+					(does it support the user in doing what they want to do)? And even if it works perfectly well and with perfect speed, is it actually <b>useful</b> 
+					- is it what the user actually wants or needs?
+
+				<p>Along with functionality, I evaluated on:</p>
+				<div class="row callout callout-color">
+					<div class="col">
+						<ul>
+							<li><b>Visibility</b> - is the function clear by looking at it?</li>
+							<li><b>Consistency</b> - is it cohesive, and does it fit what we're used to?</li>
+							<li><b>Simplicity</b> - is it easy to learn?</li>
+						
+						</ul>
+					</div>
+					<div class="col">
+						<ul>
+						
+							<li><b>Safety</b> - does it prevent and help you recover from errors?</li>
+							<li><b>Accessibility</b> - does it address barriers in ability?</li>
+							<li><b>Flexibility</b> - what amount of user control is permitted?</li>
+						</ul>
+					</div>
+				</div>
+
+				<p>In addition to usability goals and affordances, I evaluated on concepts related to interfaces, cognition, affect, and social interactions.</p>
+
+				<div class="spacerDiv">&nbsp;</div>
+				<h5>EVALUATIONS</h5>
+				<p>I evaluated 5 interactive products, including mobile apps, a kitchen appliance, a game console, and an electric toothbrush.</p>
+				<div class="row callout callout-color">
+					<div class="col">
+						<ul>
+							<li>BlendJet 2 blender</li>
+							<li>Notability</li>
+							<li>GrubHub</li>
+							<li>Steam Deck</li>
+							<li>Sonicare DiamondClean electric toothbrush</li>
+						</ul>
+					</div>
+				</div>
+				<p>For each product, I evaluated on the aforementioned heuristics and also gave each a rating for overall user experience. You can read through each 
+					diary entry below:
+				</p>
+				<div class="spacerDiv">&nbsp;</div>
+				<div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-bs-target="#carousel2" data-bs-slide-to="0" class="active"></li>
+						<li data-bs-target="#carousel2" data-bs-slide-to="1"></li>
+						<li data-bs-target="#carousel2" data-bs-slide-to="2"></li>
+						<li data-bs-target="#carousel2" data-bs-slide-to="3"></li>
+						<li data-bs-target="#carousel2" data-bs-slide-to="4"></li>
+					  </ol>
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img class="d-block w-100 image2" src="images/designentry1.png" alt="First slide">
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block w-100 image2" src="images/designentry2.png" alt="Second slide">
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block w-100 image2" src="images/designentry3.png" alt="Third slide">
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block w-100 image2" src="images/designentry4.png" alt="Fourth slide">
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block w-100 image2" src="images/designentry5.png" alt="Third slide">
+					  </div>
+					</div>
+					<a class="carousel-control-prev" role="button" data-bs-target="#carousel2" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carousel2" role="button" data-bs-target="#carousel2" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</a>
+				  </div>
+
+				  <div class="spacerDiv">&nbsp;</div>
+			<div class="spacerDiv">&nbsp;</div>
+			<div class="callout callout-color">
+				<h5>FINISHED GAME</h5>
+				<p>You can <b>play the game</b> by accessing the link below:</p>
+			</div>
+
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9 slide-embed">
+			<iframe width="552" height="167" frameborder="0" src="https://itch.io/embed/2020399"><a href="https://pandapartyart.itch.io/design-diary">Design Diary by pandapartyart</a></iframe>
+		</div>
+
+		<div class="spacerDiv">&nbsp;</div>
+		
+		 <div class="row pageBody">
+			<div class="spacerDiv">&nbsp;</div>
+			<h5>REFLECTION</h5>
+			<p>
+				Completing this project pushed me to think critically about some of the devices and products I encounter every day. By approaching evaluations with 
+				defined heuristics, I was able to measure and compare the performance of each through different perspectives. Additionally, by making the medium through 
+				which I presented my work interactive, I also had to consider the same concepts to deliver a fun and informative experience.
+			</p>
+			<div class="spacerDiv">&nbsp;</div>
+
+
+			<a href="index.html" class="btn btn-primary btn-lg">Back to all work</a>
+		 </div>
+
+		 <div class="spacerDiv">&nbsp;</div>
+		 <div class="spacerDiv">&nbsp;</div>
+
+		<!-- Footer -->
+		<div class="row">
+			<div class="col-sm-6 nav mx-auto center"><a class="navbar-brand center footer" href="#">&#127800;&nbsp;AMANDA LIU</a></div>
+			<div class="col-sm nav"><a href="index.html" class=" footer">Work</a></div>
+			<div class="col-sm nav"><a href="portfolioMore.html" class="footer">More</a></div>
+			<div class="col-sm nav"><a href="portfolioAbout.html" class="footer">About</a></div>
+			<div class="col-sm nav"><a href="portfolioContact.html" class="footer">Contact</a></div>
+		</div>
+		
+		<div class="spacerDiv">&nbsp;</div>
+		
+	</div>
+
+    
+</body>
+</html>
